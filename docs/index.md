@@ -47,7 +47,7 @@ without necessarily writing the models themselves.
 
 ## More from the Mastery Path series
 
-Free, structured, module-wise training across 32 other languages and platforms:
+Free, structured, module-wise training across 36 other languages and platforms:
 
 <div class="mastery-grid-wrap">
 <p class="mastery-grid-category">Languages</p>
@@ -93,5 +93,12 @@ Free, structured, module-wise training across 32 other languages and platforms:
   <a href="https://sigilipelli.github.io/embedded-python-mastery-path/">🐍 Embedded Python</a>
   <a href="https://sigilipelli.github.io/freertos-mastery-path/">⏱️ FreeRTOS</a>
   <a href="https://sigilipelli.github.io/s32k-mastery-path/">🔧 S32K</a>
+</div>
+<p class="mastery-grid-category">Leadership & Management</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/product-manager-mastery-path/">📋 Product Manager</a>
+  <a href="https://sigilipelli.github.io/product-lead-mastery-path/">🧭 Product Lead</a>
+  <a href="https://sigilipelli.github.io/project-manager-mastery-path/">📅 Project Manager</a>
+  <a href="https://sigilipelli.github.io/servant-leadership-mastery-path/">🤝 Servant Leadership</a>
 </div>
 </div>
