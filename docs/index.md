@@ -1,3 +1,8 @@
+---
+title: "AI Management Course Free: Manage AI Teams & Projects"
+description: "Free course on managing AI/ML teams and projects -- real frameworks, templates, and a governance project. Part of a 37-course free learning library."
+---
+
 # AI Manager Mastery Path
 
 A structured, module-wise training program for **managing** AI initiatives,
