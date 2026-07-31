@@ -62,39 +62,8 @@ nav:
       - "08 · Communicating AI Concepts to Non-Technical Stakeholders": level-1/08-communicating-ai-to-stakeholders.md
       - "09 · AI Risk Basics": level-1/09-ai-risk-basics.md
       - "10 · Project — AI Project Charter & Risk Assessment": level-1/10-project-ai-charter-risk-assessment.md
-  - "Level 2 · Intermediate":
-      - Overview: level-2/index.md
-      - "01 · Managing ML Experimentation & Iteration": level-2/01-managing-ml-experimentation.md
-      - "02 · AI Product Metrics": level-2/02-ai-product-metrics.md
-      - "03 · MLOps Fundamentals for Managers": level-2/03-mlops-fundamentals-for-managers.md
-      - "04 · Data Governance Basics": level-2/04-data-governance-basics.md
-      - "05 · Managing Cross-Functional AI Teams": level-2/05-managing-cross-functional-ai-teams.md
-      - "06 · AI Procurement & Build-vs-Buy Decisions": level-2/06-ai-procurement-build-vs-buy.md
-      - "07 · Responsible AI Frameworks": level-2/07-responsible-ai-frameworks.md
-      - "08 · Change Management for AI Adoption": level-2/08-change-management-ai-adoption.md
-      - "09 · Budgeting for AI Projects": level-2/09-budgeting-for-ai-projects.md
-      - "10 · Project — Design an MLOps Process": level-2/10-project-mlops-process.md
-  - "Level 3 · Advanced":
-      - Overview: level-3/index.md
-      - "01 · Scaling AI Teams": level-3/01-scaling-ai-teams.md
-      - "02 · AI Governance & Compliance": level-3/02-ai-governance-compliance.md
-      - "03 · Managing LLM/GenAI Initiatives": level-3/03-managing-llm-genai-initiatives.md
-      - "04 · AI Talent Strategy": level-3/04-ai-talent-strategy.md
-      - "05 · Cross-Team AI Platform Strategy": level-3/05-cross-team-ai-platform-strategy.md
-      - "06 · Managing AI Incidents & Model Failures": level-3/06-managing-ai-incidents.md
-      - "07 · AI ROI Measurement": level-3/07-ai-roi-measurement.md
-      - "08 · Vendor & Partner Management for AI": level-3/08-vendor-partner-management.md
-      - "09 · Building AI Centers of Excellence": level-3/09-building-ai-centers-of-excellence.md
-      - "10 · Project — AI Governance Framework": level-3/10-project-ai-governance-framework.md
-  - "Level 4 · Master":
-      - Overview: level-4/index.md
-      - "01 · Executive AI Strategy": level-4/01-executive-ai-strategy.md
-      - "02 · Org Design for AI-First Companies": level-4/02-org-design-ai-first-companies.md
-      - "03 · AI Portfolio Management": level-4/03-ai-portfolio-management.md
-      - "04 · Leading Through AI Disruption": level-4/04-leading-through-ai-disruption.md
-      - "05 · AI Regulation & Policy at Scale": level-4/05-ai-regulation-policy-at-scale.md
-      - "06 · Board-Level AI Reporting": level-4/06-board-level-ai-reporting.md
-      - "07 · Building AI Culture": level-4/07-building-ai-culture.md
-      - "08 · M&A and AI Capability Integration": level-4/08-ma-ai-capability-integration.md
-      - "09 · Career Growth: AI Manager to Chief AI Officer": level-4/09-career-growth-ai-manager-to-caio.md
-      - "10 · Capstone — Full AI Strategy, Governance & Org Design": level-4/10-capstone-ai-strategy-governance-org-design.md
+# --- auto-pruned stub levels (see AdSense low-value-content fix) ---
+exclude_docs: |
+  level-2/*.md
+  level-3/*.md
+  level-4/*.md
