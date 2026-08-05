@@ -1,0 +1,1997 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A structured, module-wise AI management training program from entry level to master level, covering how to lead AI/ML teams, products, and initiatives.">
+      
+      
+      
+        <link rel="canonical" href="https://sigilipelli.github.io/ai-manager-mastery-path/level-2/10-project-mlops-process/">
+      
+      
+        <link rel="prev" href="../09-budgeting-for-ai-projects/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>10 · Project — Design an MLOps Process for a Team - AI Manager Mastery Path</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Manager Mastery Path">
+  <meta property="og:title" content="10 · Project — Design an MLOps Process for a Team">
+  <meta property="og:description" content="A structured, module-wise AI management training program from entry level to master level — free, with real frameworks and templates in every module.">
+  <meta property="og:url" content="https://sigilipelli.github.io/ai-manager-mastery-path/level-2/10-project-mlops-process/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="10 · Project — Design an MLOps Process for a Team">
+  <meta name="twitter:description" content="A structured, module-wise AI management training program from entry level to master level — free, with real frameworks and templates in every module.">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#10-project-design-an-mlops-process-for-a-team" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Manager Mastery Path" class="md-header__button md-logo" aria-label="AI Manager Mastery Path" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Manager Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              10 · Project — Design an MLOps Process for a Team
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SIGILIPELLI/ai-manager-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ai-manager-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../privacy/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Privacy Policy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Entry
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Intermediate
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Manager Mastery Path" class="md-nav__button md-logo" aria-label="AI Manager Mastery Path" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI Manager Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SIGILIPELLI/ai-manager-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ai-manager-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Entry
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Entry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/01-what-is-ai-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What Is AI Management?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/02-ai-ml-fundamentals-for-managers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · AI/ML Fundamentals for Managers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/03-ai-project-lifecycles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Understanding AI Project Lifecycles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/04-managing-data-science-ml-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Managing Data Science & ML Teams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/05-ai-ethics-responsible-ai-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · AI Ethics & Responsible AI Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/06-setting-ai-project-expectations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Setting AI Project Expectations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/07-ai-vendor-tool-evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · AI Vendor & Tool Evaluation Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/08-communicating-ai-to-stakeholders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Communicating AI Concepts to Non-Technical Stakeholders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/09-ai-risk-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · AI Risk Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/10-project-ai-charter-risk-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — AI Project Charter & Risk Assessment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Intermediate
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Intermediate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-managing-ml-experimentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Managing ML Experimentation & Iteration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-ai-product-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · AI Product Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-mlops-fundamentals-for-managers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · MLOps Fundamentals for Managers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-data-governance-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Data Governance Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-managing-cross-functional-ai-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Managing Cross-Functional AI Teams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-ai-procurement-build-vs-buy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · AI Procurement & Build-vs-Buy Decisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-responsible-ai-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Responsible AI Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-change-management-ai-adoption/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Change Management for AI Adoption
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-budgeting-for-ai-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Budgeting for AI Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Design an MLOps Process for a Team
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Design an MLOps Process for a Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-shape-of-the-deliverable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shape of the deliverable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-0-scope-and-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 0 — Scope and tiers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-1-experimentation-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 1 — Experimentation tracking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-2-deployment-gates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 2 — Deployment gates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-3-monitoring-and-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 3 — Monitoring and response
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-4-governance-and-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 4 — Governance and evidence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stretch-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stretch goals
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-shape-of-the-deliverable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shape of the deliverable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-0-scope-and-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 0 — Scope and tiers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-1-experimentation-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 1 — Experimentation tracking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-2-deployment-gates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 2 — Deployment gates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-3-monitoring-and-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 3 — Monitoring and response
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-4-governance-and-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 4 — Governance and evidence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stretch-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stretch goals
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="10-project-design-an-mlops-process-for-a-team">10 · Project — Design an MLOps Process for a Team<a class="headerlink" href="#10-project-design-an-mlops-process-for-a-team" title="Permanent link">&para;</a></h1>
+<p>Every module in this level described one part of running AI systems in
+production. This capstone makes you write the part nobody writes: the
+<strong>process document</strong> that says how your specific team takes an idea from
+experiment to production, keeps it healthy, and proves it was done
+properly.</p>
+<p>Most teams do not have this. They have tools, habits, and a shared
+understanding that evaporates the moment someone leaves or the team
+doubles. The symptom is familiar — every release is negotiated from
+first principles, every incident is investigated by whoever happens to
+remember, and every audit request becomes archaeology.</p>
+<p>Writing it down is a manager's job, not an engineer's, for three
+reasons. The document is mostly about <strong>decision rights and thresholds</strong>
+— who may approve what, and at what number — which are management
+decisions. It has to be <strong>proportionate to risk</strong>, and only you see the
+whole portfolio. And it will be <strong>defended in a budget conversation</strong>,
+which is your meeting, not theirs.</p>
+<p>The deliverable is four pages covering four things: how experiments are
+tracked, what gates a model passes before serving traffic, what is
+monitored and who responds, and what evidence is retained. This module
+gives you a template for each, then a worked example of the whole thing
+on a realistic team.</p>
+<h2 id="the-shape-of-the-deliverable">The shape of the deliverable<a class="headerlink" href="#the-shape-of-the-deliverable" title="Permanent link">&para;</a></h2>
+<p>Resist the urge to write a policy. What is being asked for is a
+short, specific operating document, and specificity is the entire value.</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>The question it settles</th>
+<th>Length</th>
+<th>Fails when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0. Scope &amp; tiers</strong></td>
+<td>Which systems does this apply to, at what intensity?</td>
+<td>½ page</td>
+<td>One process is applied to everything equally</td>
+</tr>
+<tr>
+<td><strong>1. Experimentation</strong></td>
+<td>What gets recorded, and what counts as a result?</td>
+<td>½ page</td>
+<td>Recording is aspirational, not enforced</td>
+</tr>
+<tr>
+<td><strong>2. Deployment gates</strong></td>
+<td>What must be true before traffic moves?</td>
+<td>1 page</td>
+<td>Gates exist but have no named approver</td>
+</tr>
+<tr>
+<td><strong>3. Monitoring &amp; response</strong></td>
+<td>What is watched, by whom, and what happens on alert?</td>
+<td>1 page</td>
+<td>Alerts route to a channel, not a person</td>
+</tr>
+<tr>
+<td><strong>4. Governance &amp; evidence</strong></td>
+<td>What is retained, and who can produce it?</td>
+<td>½ page</td>
+<td>Evidence is assembled on request rather than as a by-product</td>
+</tr>
+</tbody>
+</table>
+<p>Two rules make the difference between a document that is used and one
+that is quoted ironically. <strong>Every threshold is a number</strong>, not an
+adjective — "acceptable quality" is unenforceable, "recall ≥ 0.82 on the
+held-out set" is a gate. And <strong>every gate has a named role that can say
+no</strong>, because a gate nobody can fail is documentation, not control.</p>
+<h2 id="section-0-scope-and-tiers">Section 0 — Scope and tiers<a class="headerlink" href="#section-0-scope-and-tiers" title="Permanent link">&para;</a></h2>
+<p>Start by listing your production and near-production systems and
+assigning each a tier, using Module 07's tiering and Module 03's
+damage-per-week test. This is the single highest-leverage half page,
+because it is what stops the process from being either too heavy for
+internal tools or too light for consequential ones.</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Tier (Module 07)</th>
+<th>Damage if bad for one week</th>
+<th>Target maturity (Module 03)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>T1–T4</td>
+<td></td>
+<td>0–4</td>
+</tr>
+</tbody>
+</table>
+<p>The tier drives everything downstream: how many gates apply, how fast
+detection has to be, who signs off, and what is retained. State plainly
+that T1 systems get the light path — otherwise the process collapses
+under its own weight within a quarter.</p>
+<h2 id="section-1-experimentation-tracking">Section 1 — Experimentation tracking<a class="headerlink" href="#section-1-experimentation-tracking" title="Permanent link">&para;</a></h2>
+<p>From Module 01: an experiment is a question with a pre-agreed decision
+rule, not a period of work. The process document specifies what must be
+recorded for a result to count as a result.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Recorded by</th>
+<th>Why it matters later</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Question and decision rule</td>
+<td>ML lead, <strong>before</strong> starting</td>
+<td>Prevents post-hoc reinterpretation</td>
+</tr>
+<tr>
+<td>Dataset version / snapshot ID</td>
+<td>Automatic</td>
+<td>Without it nothing is reproducible</td>
+</tr>
+<tr>
+<td>Code commit and environment</td>
+<td>Automatic</td>
+<td>The other half of reproducibility</td>
+</tr>
+<tr>
+<td>Metric values on the fixed eval set</td>
+<td>Automatic</td>
+<td>Comparability across weeks</td>
+</tr>
+<tr>
+<td>Outcome: promote / iterate / stop</td>
+<td>ML lead, at review</td>
+<td>Turns activity into decisions</td>
+</tr>
+<tr>
+<td>Owner and date</td>
+<td>Automatic</td>
+<td>Who to ask in eleven months</td>
+</tr>
+</tbody>
+</table>
+<p>The manager-relevant rules attached to this table are short. Results
+compared against <strong>one frozen evaluation set</strong> owned by the team, not
+by an individual. A <strong>negative result is recorded, not deleted</strong> — the
+cost of rediscovering a dead end twice is the most common invisible tax
+on ML teams. And <strong>promotion to a release candidate requires a recorded
+run</strong>, which is the one place enforcement actually needs to bite.</p>
+<h2 id="section-2-deployment-gates">Section 2 — Deployment gates<a class="headerlink" href="#section-2-deployment-gates" title="Permanent link">&para;</a></h2>
+<p>This is the heart of the document. A gate is a named check, with a
+number, and a role who can refuse. Four gates cover almost every case;
+which ones apply depends on the tier from section 0.</p>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Check</th>
+<th>Threshold (example)</th>
+<th>Approver</th>
+<th>Applies to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>G1 — Candidate</strong></td>
+<td>Beats current production model on the frozen eval set; no subgroup regression beyond tolerance</td>
+<td>≥ +2% primary metric; no subgroup down &gt;1%</td>
+<td>ML lead</td>
+<td>All tiers</td>
+</tr>
+<tr>
+<td><strong>G2 — Pre-deploy</strong></td>
+<td>Reproducible build; rollback path tested; model card complete</td>
+<td>Rollback exercised in the last 90 days</td>
+<td>Platform lead</td>
+<td>T2+</td>
+</tr>
+<tr>
+<td><strong>G3 — Shadow</strong></td>
+<td>Runs on live traffic without serving; outputs compared to production</td>
+<td>≥ 7 days, disagreement rate explained</td>
+<td>ML lead + product</td>
+<td>T3+</td>
+</tr>
+<tr>
+<td><strong>G4 — Canary</strong></td>
+<td>Small traffic share, watched against control</td>
+<td>10% for 5 days, product metric not worse</td>
+<td>Product owner</td>
+<td>T2+</td>
+</tr>
+<tr>
+<td><strong>G5 — Full rollout</strong></td>
+<td>Business sign-off; monitoring live before traffic moves</td>
+<td>Dashboard green, on-call named</td>
+<td>AI manager (you)</td>
+<td>T3+</td>
+</tr>
+</tbody>
+</table>
+<p>Three design notes worth arguing for when the team pushes back. Gates
+should be <strong>passable in hours, not days</strong>, or they get routed around;
+if G1 takes a week, the problem is your eval infrastructure, not the
+team's discipline. Every gate needs a documented <strong>waiver path</strong> with a
+named waiver approver, because the alternative to a legitimate waiver is
+a quiet bypass. And <strong>the rollback rehearsal date is a gate condition</strong>,
+not a nice-to-have — an untested rollback is a belief.</p>
+<h2 id="section-3-monitoring-and-response">Section 3 — Monitoring and response<a class="headerlink" href="#section-3-monitoring-and-response" title="Permanent link">&para;</a></h2>
+<p>Module 03 gave the six panels. The capstone adds the half that teams
+skip: what happens when a panel goes red.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Threshold</th>
+<th>Who is paged</th>
+<th>First action</th>
+<th>Escalates to you when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input validation failures</td>
+<td>&gt;2% for 2 hours</td>
+<td>Data engineering on-call</td>
+<td>Check upstream schema</td>
+<td>Unresolved at 8 hours</td>
+</tr>
+<tr>
+<td>Output distribution shift</td>
+<td>Class share moves &gt;5pp week on week</td>
+<td>ML on-call</td>
+<td>Compare to input drift</td>
+<td>Confirmed drift</td>
+</tr>
+<tr>
+<td>Primary quality metric</td>
+<td>Below release value − tolerance</td>
+<td>ML lead</td>
+<td>Assess rollback</td>
+<td>Immediately, on T3+</td>
+</tr>
+<tr>
+<td>Product metric divergence</td>
+<td>Product metric falls while model metric holds</td>
+<td>Product owner</td>
+<td>Check the evaluation set's validity</td>
+<td>Within one review cycle</td>
+</tr>
+<tr>
+<td>Inference cost per unit</td>
+<td>&gt;30% above plan</td>
+<td>Platform lead</td>
+<td>Identify the design change</td>
+<td>At month end</td>
+</tr>
+</tbody>
+</table>
+<p>Two things to insist on. <strong>Every row names a person or rota, never a
+channel</strong> — an alert delivered to a channel is an alert delivered to
+nobody. And <strong>the escalation column is the one you own</strong>; it defines the
+threshold at which a technical event becomes a management decision,
+which is exactly the boundary that is ambiguous during a real incident.</p>
+<p>Add a stated <strong>detection-window target per tier</strong> — T3 within 48 hours,
+T1 within a month. That number is what your investment case is
+denominated in.</p>
+<h2 id="section-4-governance-and-evidence">Section 4 — Governance and evidence<a class="headerlink" href="#section-4-governance-and-evidence" title="Permanent link">&para;</a></h2>
+<p>The test is not whether you have a policy. It is whether you can answer,
+in under an hour and without a heroic effort: <em>which model made this
+decision, on what data, approved by whom, and what has changed since?</em></p>
+<table>
+<thead>
+<tr>
+<th>Artefact</th>
+<th>Produced when</th>
+<th>Retained</th>
+<th>Produced by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model card (purpose, data, metrics, limits, subgroup results)</td>
+<td>At G2</td>
+<td>Life of the system + 2 years</td>
+<td>ML lead</td>
+</tr>
+<tr>
+<td>Approval record for each gate</td>
+<td>At each gate</td>
+<td>Same</td>
+<td>Automatic from the pipeline</td>
+</tr>
+<tr>
+<td>Prediction log with model version</td>
+<td>Continuously</td>
+<td>Per retention policy (Module 04)</td>
+<td>Automatic</td>
+</tr>
+<tr>
+<td>Monitoring history and incident notes</td>
+<td>Continuously</td>
+<td>2 years</td>
+<td>Platform</td>
+</tr>
+<tr>
+<td>Annual system review</td>
+<td>Yearly</td>
+<td>Life of the system</td>
+<td>You</td>
+</tr>
+</tbody>
+</table>
+<p>The design principle: <strong>evidence should be a by-product of the process,
+not a task added to it.</strong> If producing an audit trail requires anyone to
+remember to do something, it will be complete for four months and then
+quietly stop.</p>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A mid-size insurer's AI team: <strong>9 people</strong> — 4 ML/data scientists, 2
+data engineers, 1 platform engineer, 1 product manager, and an AI
+manager. Two systems in production and five experiments running at any
+time.</p>
+<p><strong>Section 0 as they wrote it:</strong></p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Tier</th>
+<th>Damage if bad for one week</th>
+<th>Target maturity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claims triage scoring</td>
+<td>T3</td>
+<td>Mis-routed claims, cycle-time penalties, regulator interest</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Internal policy-document assistant</td>
+<td>T1</td>
+<td>Mild annoyance; users notice immediately</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>That split was the most contested decision and the most valuable. The
+team had been applying an informal version of the same review to both,
+which meant the assistant felt over-governed while triage was
+under-governed — a common and precisely backwards arrangement.</p>
+<p><strong>What the process had to fix.</strong> Claims triage routed about <strong>14,000
+claims a month</strong>. A degradation that lifted the mis-triage rate by five
+percentage points put <strong>700 claims a month</strong> down the wrong path, at an
+estimated <strong>$210 each</strong> in rework and cycle-time penalty — <strong>$147,000 a
+month</strong>, or roughly <strong>$33,900 a week</strong>. The previous March, exactly that
+had happened after an upstream change to how claim descriptions were
+captured, and it ran for <strong>six weeks</strong> before a claims supervisor
+escalated: about <strong>$203,500</strong>. With a 48-hour detection target the same
+event costs about <strong>$9,700</strong>. The gap — <strong>$194,000 per occurrence</strong> — is
+the entire business case, and it was already a fact rather than a
+projection.</p>
+<p>Separately, the team estimated <strong>six person-weeks a quarter</strong> lost to
+re-running work whose results could not be reproduced or located: 24
+person-weeks a year, about <strong>$88,000</strong> at their loaded cost.</p>
+<p><strong>The investment they proposed:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>One-off</th>
+<th>Annual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Experiment tracking + model registry, adopted for real</td>
+<td>$38,000</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Automated eval gate (G1) wired into the pipeline</td>
+<td>$52,000</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Monitoring panels, thresholds and on-call rota (both systems)</td>
+<td>$61,000</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Model cards, gate approval log, retention wiring</td>
+<td>$34,000</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Platform licences and infrastructure</td>
+<td>—</td>
+<td>$28,000</td>
+</tr>
+<tr>
+<td>0.6 FTE ongoing on-call and maintenance</td>
+<td>—</td>
+<td>$114,000</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>$185,000</strong></td>
+<td><strong>$142,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p>First-year cost: <strong>$327,000</strong>. Against it, one avoided March-scale
+incident is <strong>$194,000</strong> and recovered rework is <strong>$88,000</strong> —
+<strong>$282,000</strong> a year of recurring benefit against a <strong>$142,000</strong> annual
+run cost, so the process pays for its own running from year one and
+returns the build cost on the first prevented incident.</p>
+<p><strong>The three decisions that made it work in practice.</strong> The T1 assistant
+was explicitly exempted from G3 and G5, which bought the team's
+agreement to enforce all five gates on triage. G1 was rebuilt to run in
+<strong>under 20 minutes</strong>, because the first draft took most of a day and was
+already being skipped within two weeks. And the waiver path was written
+down with the AI manager as sole waiver approver — three waivers were
+granted in the first year, each with a recorded reason, which is roughly
+the right number. Zero would have meant the gates were too loose to ever
+bind; a dozen would have meant they were theatre.</p>
+<p><strong>What did not work.</strong> The first version routed all alerts to a shared
+channel. During the first drift event, everybody saw the alert and
+nobody owned it, costing eleven hours. The rota in the section 3 table
+exists because of that, not because of good design.</p>
+<p>The transferable lesson: an MLOps process is funded and adopted when it
+is expressed as <strong>a detection window and a set of named approvers</strong>, and
+ignored when it is expressed as a maturity ambition.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Produce the four-page process document for a team you run, work
+alongside, or could plausibly describe — ideally the same project you
+charted in Level 1's capstone.</p>
+<ol>
+<li><strong>Write section 0 first.</strong> List every production and
+   near-production system, tier each one, and state a target maturity
+   level. If everything lands in the same tier, you have not tiered.</li>
+<li><strong>Fill the experiment table</strong> and decide the one enforcement point:
+   what may not happen without a recorded run.</li>
+<li><strong>Define your gates.</strong> For each of G1–G5, write the check, the
+   number, the approver by role, and which tiers it applies to. Delete
+   any gate you cannot name an approver for.</li>
+<li><strong>Complete the monitoring table</strong>, replacing every channel with a
+   person or rota, and set a detection-window target per tier.</li>
+<li><strong>Test the evidence section</strong> against the audit question: pick a real
+   decision your system made last month and try to answer it end to end.
+   Time yourself; the gap you find is the section 4 backlog.</li>
+<li><strong>Price it</strong> using Module 09's structure — one-off and annual,
+   separately — and state the benefit as a detection-window reduction
+   against a quantified failure you have already experienced.</li>
+</ol>
+<h2 id="stretch-goals">Stretch goals<a class="headerlink" href="#stretch-goals" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Run it as a tabletop.</strong> Walk your team through a fictional Tuesday
+  where the quality panel goes red at 09:00, using only the document.
+  Every question it cannot answer is a defect; fix those before
+  publishing.</li>
+<li><strong>Rehearse the rollback for real</strong> on the highest-tier system, and
+  record the date in the G2 gate condition. Most teams discover
+  something in the first attempt.</li>
+<li><strong>Reconcile it with Module 07's checklist and Module 04's access
+  tiers</strong>, so a T3 system's governance obligations appear once, in one
+  place, rather than in three documents that will drift apart.</li>
+<li><strong>Write the one-paragraph version</strong> you would send to your sponsor —
+  scope, detection targets, cost, and what gets worse if it is not
+  funded. If you cannot compress it to a paragraph, the underlying
+  thinking is not finished.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
