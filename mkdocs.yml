@@ -62,8 +62,19 @@ nav:
       - "08 · Communicating AI Concepts to Non-Technical Stakeholders": level-1/08-communicating-ai-to-stakeholders.md
       - "09 · AI Risk Basics": level-1/09-ai-risk-basics.md
       - "10 · Project — AI Project Charter & Risk Assessment": level-1/10-project-ai-charter-risk-assessment.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Managing ML Experimentation & Iteration": level-2/01-managing-ml-experimentation.md
+      - "02 · AI Product Metrics": level-2/02-ai-product-metrics.md
+      - "03 · MLOps Fundamentals for Managers": level-2/03-mlops-fundamentals-for-managers.md
+      - "04 · Data Governance Basics": level-2/04-data-governance-basics.md
+      - "05 · Managing Cross-Functional AI Teams": level-2/05-managing-cross-functional-ai-teams.md
+      - "06 · AI Procurement & Build-vs-Buy Decisions": level-2/06-ai-procurement-build-vs-buy.md
+      - "07 · Responsible AI Frameworks": level-2/07-responsible-ai-frameworks.md
+      - "08 · Change Management for AI Adoption": level-2/08-change-management-ai-adoption.md
+      - "09 · Budgeting for AI Projects": level-2/09-budgeting-for-ai-projects.md
+      - "10 · Project — Design an MLOps Process for a Team": level-2/10-project-mlops-process.md
 # --- auto-pruned stub levels (see AdSense low-value-content fix) ---
 exclude_docs: |
-  level-2/*.md
   level-3/*.md
   level-4/*.md

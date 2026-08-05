@@ -23,7 +23,7 @@ non-technical stakeholders. If you want the hands-on technical track instead
 | Level | Focus | Modules |
 |-------|-------|---------|
 | [Level 1 · Entry](level-1/index.md) | What AI management is, project lifecycles, working with data science/ML teams, ethics and risk basics | 9 topics + 1 project |
-| Level 2 · Intermediate (coming soon) | MLOps fundamentals, AI product metrics, data governance, cross-functional teams, procurement | 9 topics + 1 project |
+| [Level 2 · Intermediate](level-2/index.md) | MLOps fundamentals, AI product metrics, data governance, cross-functional teams, procurement | 9 topics + 1 project |
 | Level 3 · Advanced (coming soon) | Scaling AI teams, governance & compliance, LLM/GenAI initiatives, talent strategy, ROI | 9 topics + 1 project |
 | Level 4 · Master (coming soon) | Executive AI strategy, org design, portfolio management, board reporting, career growth | 9 topics + 1 capstone |
 
