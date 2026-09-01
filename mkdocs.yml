@@ -1,8 +1,8 @@
 site_name: AI Manager Mastery Path
 site_description: A structured, module-wise AI management training program from entry level to master level, covering how to lead AI/ML teams, products, and initiatives.
-site_url: https://sigilipelli.github.io/ai-manager-skillmastery/
-repo_url: https://github.com/SIGILIPELLI/ai-manager-skillmastery
-repo_name: ai-manager-skillmastery
+site_url: https://sigilipelli.github.io/ai-manager-mastery-path/
+repo_url: https://github.com/SIGILIPELLI/ai-manager-mastery-path
+repo_name: ai-manager-mastery-path
 
 theme:
   name: material
