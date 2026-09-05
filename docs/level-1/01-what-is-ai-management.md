@@ -87,6 +87,37 @@ A single strong AI manager in a smaller company would do all three — but
 should still *name* which hat they're wearing in each meeting, because the
 questions worth asking differ sharply between them.
 
+## How It Actually Works
+
+The reason these three roles keep colliding in real orgs is structural, not
+accidental — it comes from where AI work sits in the funding and reporting
+chain. Traditional software has one clear owner per layer: product owns the
+backlog, engineering owns the build, and a program manager coordinates
+dependencies *between* teams that already have clear boundaries. AI work
+breaks that boundary because the artifact itself — the model — is
+simultaneously a product decision (what should it predict, for whom),
+an engineering decision (how is it trained, served, monitored), and a
+cross-team dependency magnet (legal must clear the data, security must clear
+the endpoint, support must be retrained around its outputs). There is no
+clean handoff point the way there is between a frontend spec and a backend
+implementation, because a model's behavior is discovered empirically rather
+than specified up front — so the "spec" keeps changing hands between the
+person deciding what "good" means (PM) and the person who can only find out
+whether it's achievable by actually training something (EM).
+
+This is also why title mismatches surface specifically around month three,
+not week one. Early on, everyone is still exploring, so the ambiguity about
+who owns what doesn't cost anything — there's no decision yet whose
+ownership is contested. The collision point arrives at the first moment two
+of these accountabilities produce different answers to the same question:
+the PM says "ship it, the business case is validated," the EM says "the
+eval numbers aren't there yet," and if no one was ever assigned the actual
+authority to break that tie, the project stalls in a way that looks like a
+personality conflict but is actually a missing decision-rights assignment.
+Naming which hat you're wearing in a given meeting works as a fix because it
+makes the *implicit* accountability explicit before the tie-breaking moment
+arrives, not after.
+
 ## Exercise
 
 Pick an AI-related initiative from your own organization (or a plausible one

@@ -91,6 +91,42 @@ the culture survey result from section 5 framed honestly as a priority,
 not hidden), and forward look (the CAIO hire itself as the board's key
 near-term decision, with the org design rationale from section 3).
 
+## How It Actually Works
+
+The reason this capstone sequences strategic positioning before portfolio
+scoring before org design before governance — rather than treating all six
+sections as independent deliverables — is that each section supplies an
+input the next one structurally requires. Portfolio risk-adjusted value
+(section 2) can't be ranked meaningfully without first knowing, from
+section 1's positioning matrix, which quadrant each initiative sits in —
+a Horizon 3 exploratory bet and a Horizon 1 efficiency play are not
+comparable on raw risk-adjusted value alone, the same portfolio-pool
+separation Module 3 insists on. Org design (section 3) can't be chosen
+independent of the portfolio's actual shape, because a hybrid hub-and-spoke
+structure is only justified once there's real evidence of the kind of
+cross-initiative duplication Module 5 requires as a precondition, and that
+evidence only exists once the portfolio itself has been mapped. And
+governance (section 4) can't be scoped without the org design settled,
+because the governance inventory's ownership model (who runs intake, who
+signs off) depends on whether a centralized, embedded, or hybrid structure
+is actually in place. Each section is a load-bearing input to the next,
+which is why a capstone assembled out of order — governance drafted before
+the org chart, say — would produce documents that look complete individually
+but don't actually cohere into one executable strategy.
+
+The board report in section 6 being last, rather than first, reflects the
+same compression principle from Module 6's board-reporting module: a
+summary can only faithfully represent work that has already been done in
+full, so writing the board-facing version before the underlying analysis
+exists would produce exactly the "AI initiatives progressing well" failure
+mode Module 6's worked example diagnosed — a summary with nothing real
+underneath it to compress. Naming the culture survey result honestly in
+that summary, rather than folding it into a vaguer positive framing, is the
+same discipline from Module 7's culture module and Module 6's bad-news
+handling: a board's trust in every future report is a function of whether
+this report proves reliable when it eventually gets checked against
+reality, and the check always eventually happens.
+
 ## Stretch goals
 
 - Build the full underwriting-model reproducibility remediation plan

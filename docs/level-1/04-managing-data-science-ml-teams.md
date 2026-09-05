@@ -82,6 +82,41 @@ hit their (now honest) commitments consistently, and stakeholders got
 clearer, more truthful updates on real progress instead of sandbagged
 estimates.
 
+## How It Actually Works
+
+Sprint commitments fail specifically for modeling work because of what a
+"ticket" implicitly assumes: that the path from start to done is mostly
+known, and remaining uncertainty is about execution speed, not about
+whether the destination exists at all. An experiment's outcome is
+determined by properties of the data and the problem that are not visible
+until the experiment actually runs — there is no amount of up-front analysis
+that substitutes for training the model and checking recall on held-out
+data, because the relationship between a feature and the target is a
+statistical fact about the world, not a design decision a team can simply
+choose to satisfy by working harder. Committing to "improve recall by 5
+points" is therefore a commitment to a fact about reality that hasn't been
+observed yet — which is why it reliably produces either sandbagging (padding
+estimates to guarantee the number lands) or missed commitments, and neither
+outcome reflects the team's actual productivity. Committing to "run these
+three specific, well-designed experiments" is achievable because running an
+experiment competently *is* within the team's control, even when its result
+isn't.
+
+This is also the mechanical reason a negative result counts as real
+progress rather than a wasted sprint: each disproved hypothesis removes one
+branch from the space of things that could explain the target variable,
+which narrows where the *next* experiment should look. A team with no
+negative results after months of work has either gotten extraordinarily
+lucky on its very first guesses, or — far more commonly — isn't running
+experiments rigorous enough to actually falsify anything, which is a
+warning sign, not a good one. Evaluating "quality of experimental design"
+over "number of models trained" follows directly: a sloppy experiment (a
+leaky train/test split, an unrepresentative sample, a metric that doesn't
+match the real objective) can produce a positive-looking result that tells
+you nothing true, while a rigorous experiment that disproves the hypothesis
+has still generated real information — the first is a false positive
+disguised as output, the second is the process working as intended.
+
 ## Exercise
 
 Map your current (or a plausible) AI/ML team against the five roles in

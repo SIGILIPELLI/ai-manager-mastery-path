@@ -219,6 +219,38 @@ The transferable lesson: an MLOps process is funded and adopted when it
 is expressed as **a detection window and a set of named approvers**, and
 ignored when it is expressed as a maturity ambition.
 
+## How It Actually Works
+
+The "everybody saw the alert and nobody owned it" failure is a textbook
+instance of diffusion of responsibility interacting with an unowned
+notification channel, and it's worth understanding mechanically because it
+recurs in every monitoring system that routes alerts to a group rather than
+a person: when an alert lands somewhere many people can see, each
+individual's rational inference is that someone else — someone with more
+context, or who saw it first — is already handling it, and that inference
+is available to every recipient simultaneously, so it produces a stable
+equilibrium where everyone waits and nobody acts. This isn't a training or
+attitude problem; it's a structural property of shared-visibility channels
+with no designated owner, which is exactly why the fix was a rota (a
+rotating single named owner) rather than "remind the team to be more
+proactive" — the rota removes the ambiguity that made the diffusion
+possible in the first place, by making it unambiguous whose job it is to
+act on any given alert regardless of who else can see it.
+
+The three-waivers-being-the-right-number observation reflects a genuine
+calibration signal about gate design: a gate that is never waived is
+indistinguishable, from the outside, between "the gate is perfectly
+calibrated to real risk" and "the gate is so loosely enforced or so easy to
+satisfy that it never actually binds on anything" — zero waivers carries no
+information about which. A gate waived constantly signals the opposite
+failure: the threshold is set somewhere unrealistic relative to how the
+team actually needs to operate, so the gate is being routed around rather
+than respected. A small, non-zero, individually-justified waiver count is
+the only pattern consistent with a gate that's genuinely binding on real
+edge cases some of the time — which is why tracking the waiver count and
+its reasons is itself a monitoring signal on the governance process, not
+just an administrative log.
+
 ## Exercise
 
 Produce the four-page process document for a team you run, work

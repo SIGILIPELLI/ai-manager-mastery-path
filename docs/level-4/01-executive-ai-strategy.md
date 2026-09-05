@@ -100,6 +100,41 @@ approved the plan specifically because it distinguished where AI mattered
 strategically from where matching a competitor's headline feature would
 have been strategy-by-headline.
 
+## How It Actually Works
+
+Thornbury's split verdict on dynamic pricing versus personalized promotions
+is a direct application of a mechanism worth naming precisely: two
+capabilities can look superficially similar (both "AI features a competitor
+just shipped") while having opposite risk-adjusted return profiles because
+differentiation potential and market-specific customer sensitivity are
+independent variables that happen to combine differently in each case. A
+capability's business value isn't an intrinsic property of the technology —
+personalized promotions and dynamic pricing use overlapping technical
+machinery — it's a function of how that capability interacts with this
+specific market's competitive structure and customer psychology. Reacting
+feature-for-feature to a competitor's launch implicitly assumes the
+technology itself is what matters, when the actual determinant is whether
+your customers and competitive position make that specific capability an
+advantage or a liability here — which is exactly why the survey data on
+regional price-sensitivity, not any property of the pricing algorithm
+itself, was the deciding input.
+
+The 60-70/20-30/5-10 horizon allocation isn't an arbitrary convention — it
+mirrors a standard risk-and-information structure found in any portfolio
+under genuine uncertainty: Horizon 1 investments have the most available
+information (proven techniques, known ROI patterns) and the fastest
+feedback loops, so they can absorb the largest share of capital with the
+least risk of total loss. Horizon 3 investments have the least available
+information — you're placing a bet before you can validate the core
+assumption — so a small allocation limits the downside of being wrong while
+still buying the option value of being right early. A portfolio skewed too
+far toward Horizon 1 has optimized entirely for certainty and given up any
+chance at the disproportionate returns that come from being early on a
+real structural shift; skewed too far toward Horizon 3, it's spending
+capital on unvalidated bets faster than Horizon 1's returns can replenish
+it — which is precisely the failure mode "you're speculating without a
+proven base to fund it" describes mechanically, not just rhetorically.
+
 ## Exercise
 
 Take your own organization (or Thornbury Markets, pre-decision).

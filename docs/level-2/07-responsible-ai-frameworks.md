@@ -188,6 +188,42 @@ addressable findings, four of which were fixed in six weeks. Responsible AI
 done as a checklist is an engineering activity. Done as a principle, it is
 an argument.
 
+## How It Actually Works
+
+The employment-gap effect in the worked example illustrates the same proxy-
+variable mechanism as Module 05's zip-code example, but through a different
+pathway: a model ranking résumés was never given "took parental leave" as a
+feature, yet it learned to penalize a six-month-plus employment gap because
+that gap is a genuinely predictive-looking pattern in whatever historical
+hiring outcomes the vendor trained on, and it happens to correlate with
+parental leave (and other protected circumstances) in the applicant
+population. The model isn't inferring intent or making a moral judgment —
+it's doing exactly what it was optimized to do, finding features that
+correlate with the historical labels, and a societal pattern (parental
+leave disproportionately correlating with employment gaps for one group)
+gets absorbed into the model as signal indistinguishable, from the
+optimizer's perspective, from any other correlation. This is why removing
+the offending feature and re-running on the company's own data is a real
+fix rather than a workaround: it removes the specific correlated pathway
+the model had been exploiting, at a measurable, disclosed cost to raw
+ranking quality — the tradeoff item 5's pre-agreed disparity threshold is
+designed to force into the open rather than leaving it undiscussed.
+
+The 2%-override-rate finding is mechanically diagnostic in a way that's
+easy to miss: a review process functions as a check only if the reviewer's
+decision is causally independent of the model's suggested score — that is,
+if the reviewer would sometimes reach a different conclusion given the same
+underlying evidence. A recruiter given 40 seconds and a bare 1–100 number
+has no independent evidence to reason from; their decision is causally
+*downstream* of the score itself, not a separate judgment running in
+parallel with it, so the review adds no new information no matter how
+conscientious the recruiter is. Redesigning the workflow to surface actual
+evidence (the three strongest points per candidate) rather than a
+compressed score restores the causal independence that makes disagreement
+possible at all — which is exactly why the override rate rising from 2% to
+14% is evidence the fix worked, not just a process metric moving for its
+own sake.
+
 ## Exercise
 
 1. **Build a use-case register.** List every AI system your organisation

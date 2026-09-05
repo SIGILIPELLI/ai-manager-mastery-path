@@ -215,6 +215,39 @@ usually the smallest, and the cost that actually decides the project is
 the annual run line. Find the real distribution before the argument, not
 after it.
 
+## How It Actually Works
+
+The multi-step agentic flow's nine-fold usage jump is a direct consequence
+of how token-metered pricing composes across steps: a single-call design
+pays for one prompt-plus-response per interaction, while an escalating-
+retrieval flow that calls the model repeatedly (retrieve, re-rank, draft,
+critique, revise) pays the same per-token rate multiple times per
+interaction, and each additional step doesn't just add a fixed increment —
+it compounds against whatever context (retrieved documents, prior turns) is
+carried into that step. A step that re-sends the accumulated conversation
+history as part of its prompt pays for that history's tokens again on every
+call, which is why architectural choices invisible in a design review (how
+many model calls per interaction, how much context each call carries)
+translate directly and nonlinearly into the usage-fee line — the per-call
+price didn't change, but the number of billable calls per unit of business
+value did, by an order of magnitude the team didn't measure until it was
+running.
+
+The $2.86-vs-$6.40 unit-cost comparison is the right lens specifically
+because it holds the *denominator* fixed to a business-meaningful unit
+(a deflected contact) rather than a model-internal one (a token, an
+inference call), which is the same discipline as Module 02's insistence on
+translating model metrics into dollars. A cost-per-token number can look
+alarmingly large in isolation while being a rounding error against the
+value delivered, or the reverse — cheap per call but delivering so little
+value per call that the unit economics never clear the baseline. Only
+computing cost divided by the actual unit of value (not the unit of
+compute) lets the two be compared on the same footing as the alternative
+being displaced, which is exactly the arithmetic that reframed "the AI cost
+question" from a debate about $0.031-per-conversation pricing into the real
+question: the $302,000 people-heavy run line that actually decided whether
+the project was worth funding.
+
 ## Exercise
 
 Take one AI project you are running, planning, or could plausibly propose.

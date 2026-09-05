@@ -109,6 +109,41 @@ skipped step" figure had risen from 12% to 41% — still imperfect, but a
 concrete, measured sign that the incentive change plus the visible
 leadership action were shifting real behavior, not just restating values.
 
+## How It Actually Works
+
+Brightline's gap between a documented governance framework and 68%
+self-reported corner-cutting demonstrates why written process alone can
+never determine behavior under pressure: a checklist specifies *what to
+do*, but a promotion cycle specifies *what actually gets rewarded*, and
+when the two send conflicting signals, the reward signal wins because it's
+the one with real, felt consequences for the individual — a skipped
+governance step costs nothing visible in the moment, while a compressed
+timeline that ships faster produces an immediate, tangible promotion
+outcome. This is the same asymmetry as the incentive-conflict mechanism in
+Level 2's change-management module: a written rule and a felt consequence
+compete for behavior, and the felt consequence, being immediate and
+certain, structurally outcompetes a written rule whose enforcement is
+occasional and abstract. Two engineers being promoted specifically *for*
+the behavior the governance framework existed to prevent wasn't a
+coincidence the survey happened to reveal — it was the underlying
+incentive structure operating exactly as designed, just never before
+connected explicitly to the governance framework it was quietly undermining.
+
+The CAIO's public three-week launch delay working as a culture intervention
+— where the written framework alone hadn't — follows from a specific
+property of costly, observable signals: anyone can *say* "we take
+governance seriously" at zero cost, so that statement carries no
+information about what leadership would actually do under real pressure to
+ship. A leader visibly absorbing a real cost (a delayed high-visibility
+launch, with the reason stated publicly rather than quietly) is a signal
+that can only be sent by someone who genuinely means it, because sending it
+falsely would be expensive and pointless — nobody delays a real launch for
+three weeks as theater. This is precisely why the survey's escalation-
+comfort figure moved from 12% to 41% only after the incentive fix and the
+visible action together, not from either the written policy or a
+verbal reassurance alone: employees calibrate to costly signals because
+those are the only signals that can't be cheaply faked.
+
 ## Exercise
 
 Take your own organization (or Brightline Devices, pre-survey).

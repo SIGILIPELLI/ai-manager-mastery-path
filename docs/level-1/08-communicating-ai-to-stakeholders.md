@@ -64,6 +64,35 @@ flagged accounts." The executive team approves the pilot immediately,
 because the update gave them exactly the information needed to make that
 call — no jargon to decode, no hidden uncertainty, and one clear ask.
 
+## How It Actually Works
+
+The reason "8 in 10 flagged, 2 in 10 false alarms" lands where "AUC 0.83"
+doesn't is that AUC (area under the ROC curve) is a summary statistic
+averaged across *every possible decision threshold* a model could use, not
+a description of how the model will actually behave once your team picks
+one operating point and starts acting on its flags. AUC answers "how well
+does this model rank positive cases above negative ones, in general" — a
+question that matters to the data scientist choosing between candidate
+models, but not to an executive who needs to know what will happen at the
+specific precision/recall tradeoff (the specific threshold) the team plans
+to deploy. Translating AUC into "8 of 10 flagged customers really are
+churning" requires picking that operating threshold first and reporting the
+confusion-matrix numbers it produces — which is exactly why the strong
+framings in section 2 are all threshold-specific numbers, not the
+aggregate metrics that appear in a data scientist's own notebook.
+
+This also explains why naming what's "still uncertain" prevents a specific,
+recurring failure: a metric computed on an overall test set silently
+averages over subgroups (new customers, edge cases, rare categories) whose
+individual performance can be much worse than the headline number suggests,
+for the same statistical reason a rare class can hide inside an aggregate
+accuracy figure (see Module 2). If the manager doesn't explicitly flag "we
+have less historical data on 90-day-old customers, so performance there is
+genuinely unknown," the executive has no way to distinguish "this number is
+solid everywhere" from "this number is solid on average but untested where
+it matters most" — the two situations look identical in a single reported
+percentage, and only naming the gap out loud closes it.
+
 ## Exercise
 
 Take a real or plausible technical status update from an AI project (write

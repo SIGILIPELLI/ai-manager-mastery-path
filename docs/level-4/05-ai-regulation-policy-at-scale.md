@@ -101,6 +101,40 @@ architecture — a distinction their public comment letter stated explicitly,
 which the CEO's team viewed as important for credibility with both
 regulators and customers evaluating multiple vendors.
 
+## How It Actually Works
+
+Windham's three-week response to Colorado's law versus a competitor's four
+months illustrates a structural property of configurable architecture
+versus retrofit architecture: when jurisdiction-specific behavior (notice
+language, audit reporting, human-review thresholds) is designed as
+parameters read by a single shared system from the start, a new
+jurisdiction's requirement is satisfied by adding a new parameter value to
+an existing mechanism — the code path that enforces "show this notice,"
+"log this audit trail," "require this review" already exists and works,
+it's just being configured differently. A retrofit architecture, by
+contrast, has jurisdiction-specific behavior implicitly baked into a single
+code path built around one jurisdiction's original requirements, so a new
+jurisdiction's differing rule can't be satisfied by configuration — it
+requires locating every place the original assumption is embedded and
+building a parallel path, which is exactly the kind of work that takes
+months rather than weeks and gets slower, not faster, as more
+jurisdiction-specific patches accumulate on top of each other.
+
+The policy-engagement discipline (supporting a framework that "levels the
+compliance burden across the industry" rather than advantaging Windham's
+own architecture) matters for a reason that goes beyond ethics — it's about
+what kind of regulatory outcome is actually durable. A rule shaped to favor
+one company's specific existing architecture is vulnerable to being
+challenged or reversed the moment competitors, customers, or the public
+recognize the self-serving pattern, because it invites exactly the
+scrutiny that produces political and reputational backlash later. A rule
+argued for on the basis of a genuinely industry-wide problem (inconsistent
+bias-audit standards making compliance unpredictable for every vendor) is
+defensible regardless of who benefits, which is precisely why stating the
+distinction explicitly in the public comment letter was a credibility
+investment: it's evidence, on the record, that the company's engagement
+survives the scrutiny test the illegitimate version would fail.
+
 ## Exercise
 
 Take your own organization's highest-regulatory-exposure AI system (or

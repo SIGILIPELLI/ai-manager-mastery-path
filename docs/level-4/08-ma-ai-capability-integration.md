@@ -100,6 +100,41 @@ reduced the CTO's sense of being an irreplaceable single point of failure,
 which had been part of their stated reason for considering leaving after
 an earlier informal conversation.
 
+## How It Actually Works
+
+The Pellucid data-rights gap illustrates why "the model works" and "the
+acquirer can legally use the model" are entirely separate questions that
+diligence has to verify independently: a model's technical capability is a
+property of its trained weights, but its *legal usability* is a property of
+the contracts governing the data those weights were trained on, and those
+two properties can diverge completely — a technically excellent model
+trained on data licensed for three specific pilot customers doesn't become
+more broadly licensable just because it works well, because the license
+terms are a separate legal fact layered on top of, not derived from, the
+model's technical quality. This is precisely why valuing an acquisition
+from a demo is dangerous: a demo only ever demonstrates the technical
+property, never the legal one, and the two are invisible to each other
+until someone specifically checks — which is exactly the gap price
+negotiation was able to correct once diligence surfaced it before close,
+rather than after, when the acquirer would have discovered it was legally
+unable to deploy the capability it had just paid for.
+
+The key-person concentration finding and its fix reveal a general principle
+about tacit knowledge in technical teams: capability that exists only in
+one person's head is a single point of failure regardless of how good the
+underlying system is, because the system's continued maintainability
+depends entirely on that person's continued presence and willingness — the
+moment they leave, the organization doesn't just lose a team member, it
+loses the *only currently-existing pathway* to retrain, debug, or extend
+the core asset. The 90-day knowledge-transfer plan worked as a retention
+lever, not just a risk-mitigation one, for a subtle reason: distributing
+the CTO's unique knowledge to two other engineers didn't just protect
+Vantree against the CTO leaving — it removed the CTO's own felt burden of
+being irreplaceable, which the case explicitly names as part of what had
+been pushing them toward leaving in the first place. The technical fix and
+the retention fix were the same action, because the risk and the personal
+strain shared the same root cause.
+
 ## Exercise
 
 Take a real or plausible AI-capability acquisition (or Pellucid Vision,

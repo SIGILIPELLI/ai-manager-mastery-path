@@ -103,6 +103,40 @@ rate for those who opted in — a number the company reported transparently
 to the remaining organization specifically to rebuild the trust the initial
 four-month silence had cost.
 
+## How It Actually Works
+
+Ferngate's four-month silence backfiring illustrates a specific property of
+information vacuums inside organizations: when leadership withholds
+communication, it doesn't create an absence of belief among employees — it
+creates a vacuum that gets filled by whatever information is available,
+which in this case was a vendor's marketing claim ("90% automation") with
+no connection to the company's actual plan. People don't wait for facts
+before forming a view of their own risk; they extrapolate from whatever
+signal is available, and a vendor's aspirational marketing copy was more
+available and more vivid than the company's actual (still-undetermined)
+plan, so it became the operative belief by default. This is precisely why
+"be honest about what you know and don't know yet, with a dated commitment"
+outperforms silence even when the honest answer is "we haven't decided" —
+a stated uncertainty, dated, is still real information that displaces
+whatever worse rumor would otherwise fill the same space, whereas silence
+guarantees the vacuum gets filled by something, and that something is
+rarely accurate or reassuring.
+
+The specific loss of three senior claims processors is also mechanically
+significant, not just an unfortunate side effect: the employees most likely
+to resign under uncertainty are precisely the ones with the strongest
+external options, which correlates heavily with exactly the domain
+expertise a company needs most for the "AI-assisted claims review" and
+edge-case escalation roles the automation was creating. This produces a
+specific adverse-selection dynamic — prolonged uncertainty doesn't shrink
+the workforce randomly, it disproportionately removes the people whose
+expertise the post-automation organization depends on most, because those
+are the same people whose expertise makes them employable elsewhere while
+they wait for clarity. This is why the retraining program's success
+depended on speed as much as generosity: every week of continued
+uncertainty was actively degrading the exact talent pool the eventual
+redeployment plan needed to succeed.
+
 ## Exercise
 
 Take a real or plausible AI-driven disruption at your organization (or

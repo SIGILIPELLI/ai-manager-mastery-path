@@ -201,6 +201,38 @@ not the point-in-time cost, made the decision durable. And the pilot — 2.7%
 of first-year spend — corrected an assumption that would have broken the
 operating model.
 
+## How It Actually Works
+
+The break-even-volume calculation is doing more work than the matrix
+precisely because of a structural difference in cost shape between the two
+options: build cost is dominated by a large fixed component (salaries,
+training compute) paid regardless of document volume, with a small variable
+component per unit (marginal inference cost); buy cost is close to the
+reverse — a small fixed integration cost and a variable per-unit fee that
+scales with usage. Two cost functions with different fixed/variable splits
+always cross at exactly one volume, below which the low-fixed-cost option
+(buy) wins and above which the low-marginal-cost option (build) wins — this
+is the same arithmetic behind any make-or-buy manufacturing decision, and
+it's the reason a single "current cost" comparison is fragile in a way a
+crossover point is not: current cost only tells you who wins *today*, while
+the crossover tells you the entire future trajectory of the comparison as
+volume changes, which is exactly the information a growth plan needs to
+stress-test the decision against.
+
+The vendor's claimed 96% versus the pilot's measured 91% has the same root
+cause as Module 07's vendor-evaluation gap: a benchmark accuracy number is a
+property of a specific evaluation distribution, and a vendor's published
+number is measured on whatever document mix makes their system look best,
+which need not resemble this company's actual mix of claims forms, medical
+letters, and correspondence. The 5-point gap isn't the vendor lying — it's
+the same document-extraction model genuinely performing differently on two
+different input distributions, for the same statistical reason a fraud
+model's accuracy differs between a curated benchmark and live transactions.
+This is precisely why the paid pilot on the company's own 2,000 real
+documents is the highest-leverage step in the whole process: it's the only
+step that measures the actual quantity the staffing plan depends on, rather
+than a number computed on someone else's data.
+
 ## Exercise
 
 Take a real or plausible AI capability decision facing your organisation.

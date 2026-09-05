@@ -97,6 +97,38 @@ audit finding that started the whole effort (inconsistent model
 documentation) was fully resolved, because the sign-off gate was now
 actually enforced where it mattered instead of everywhere.
 
+## How It Actually Works
+
+Castleton's CoE simultaneously over-controlling trivial decisions and
+missing the genuinely important one is not a coincidence — both failures
+trace to the same root cause: an unwritten mandate defaults to whatever
+scope feels natural to the people staffing it, and "own AI excellence" gives
+no boundary at all, so the CoE expanded into whatever caught its attention
+(a library choice, because someone happened to review it) while quietly
+never being assigned the one thing that actually mattered (the
+underwriting bias audit), because nobody had explicitly made that anyone's
+job at all. An unbounded mandate isn't neutral — it's equivalent to letting
+scope be decided ad hoc, case by case, which produces exactly the pattern
+observed: attention flows to whatever is easiest or most visible to review,
+not to whatever carries the most risk, because risk-weighting requires the
+explicit tiering the Module 2 inventory provides, and nothing forced the
+CoE to consult it.
+
+The pod-lead-satisfaction outcome is also mechanically explicable, not just
+a morale story: a review gate that fires on low-risk decisions imposes a
+real cost (delay, friction, a sense of being second-guessed) on every pod,
+every time, with zero corresponding risk-reduction benefit, since the
+decision it's blocking carries no real governance exposure in the first
+place — that's a pure deadweight cost, felt directly by every pod on every
+cycle. Narrowing the gate to fire only on medium-plus risk systems removes
+that cost from the overwhelming majority of pod interactions while
+concentrating the CoE's actual leverage exactly where it has real value —
+which is why satisfaction improved and the original audit finding got
+fully resolved in the same move: the fix wasn't "do more governance," it
+was "stop spending the CoE's authority on decisions where it produces no
+risk reduction, so there's attention and credibility left for the one that
+does."
+
 ## Exercise
 
 Take your own organization's CoE (existing, planned, or the Castleton Trust

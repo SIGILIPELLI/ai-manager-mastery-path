@@ -99,6 +99,41 @@ regulatory exposure map — the literacy-building goal in section 4 visibly
 working, and a meaningfully different board dynamic than the one bullet
 point had produced for three years.
 
+## How It Actually Works
+
+Ashford's single "progressing well" bullet obscuring a $2.8M-to-$900K
+value collapse demonstrates a general property of information compression:
+any summary necessarily discards detail, and the discarding is never
+neutral — it reflects whatever the summarizer chose to preserve, whether or
+not that choice was deliberate. A one-line status update has to compress
+months of information into a handful of words, and "progressing well" is
+exactly the kind of compression that preserves sentiment while discarding
+the one number (risk-adjusted value trend) that would have changed the
+board's assessment. This is not necessarily dishonesty in the moment it's
+written — a status genuinely might feel like "progressing" from inside the
+project — but it means the format itself, a single bullet under a broader
+technology update, structurally cannot carry the information a board needs
+to exercise oversight, regardless of the good faith of whoever wrote it.
+This is exactly why the fix was a structural one (a standalone four-section
+report with mandated content) rather than an instruction to "be more
+transparent" — the previous format had no slot for a risk-adjusted value
+trend to go in, so it never would have surfaced there no matter how candid
+management intended to be.
+
+The board's shift from passive acceptance to sharp, specific questions over
+two quarters reflects a mechanical relationship between information supply
+and question quality: a board member can only ask a well-targeted question
+about something they've been given a vocabulary and a baseline to reason
+about — asking a sharp question about "Horizon 3 allocation" requires
+having previously been told what Horizon 3 means and what the current
+allocation is, which the standing report's structure and its AI-101
+appendix specifically supplied. Before the report existed, a board member
+had no scaffold to hang a specific question on, so the only available
+question was vague ("is AI going well?") because vague inputs can only
+produce vague outputs — the improvement in question quality is a direct,
+traceable consequence of the improvement in the information architecture
+feeding the board, not a separate outcome that happened to occur alongside it.
+
 ## Exercise
 
 Take your own organization's board AI reporting (or Ashford Freight, at the

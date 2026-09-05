@@ -73,6 +73,45 @@ actually were?), not the headline accuracy number. This single question —
 the highest-leverage habits an AI manager can build, and it costs nothing to
 ask.
 
+## How It Actually Works
+
+The reason accuracy alone can be misleading isn't a communication problem —
+it's a direct consequence of how models are actually scored during
+training. Most classifiers are optimized against a loss function that
+treats every example roughly equally, and accuracy is just "fraction of
+examples scored correctly" computed the same way. When one class (fraud,
+churn, defect) is rare, a model can drive that loss down almost entirely by
+getting good at predicting the *majority* class, because that's where nearly
+all the loss-reducing opportunity lives — there's very little training
+signal pushing it to also nail the rare class, since getting the rare cases
+wrong barely moves the average. This is precisely why the fraud model in
+the worked example can plateau at "predict not-fraud" behavior: gradient
+descent found a local minimum that happens to coincide with a degenerate,
+useless strategy, and nothing in a plain accuracy metric penalizes that.
+Precision and recall exist because they decompose the confusion matrix
+(true/false positives and negatives) into two separate signals that a
+majority-class shortcut can't simultaneously game — a model that always
+predicts "not fraud" scores 0% recall on the fraud class no matter how high
+its accuracy climbs, which is why asking for recall specifically closes off
+the shortcut.
+
+Overfitting has a similarly mechanical explanation: a model with enough
+parameters (a deep network, a high-degree decision tree, an LLM being
+fine-tuned on a small dataset) has enough capacity to essentially memorize
+the training set's noise along with its real pattern, because nothing in the
+optimization process distinguishes "signal" from "coincidental quirk of
+these specific examples" — both reduce training loss identically. The only
+way to detect this is to evaluate on data the optimization process never
+saw, which is why "hold out a test set and never let training touch it" is
+a hard rule, not a best practice: any leakage between train and test data
+collapses the one signal (a gap between training performance and held-out
+performance) that reveals memorization is happening. Model drift is the
+production-time mirror of this: the real-world data distribution keeps
+moving away from whatever distribution the model was validated against, so
+a model that was honestly evaluated at launch degrades for reasons that have
+nothing to do with a bug — the input distribution itself changed underneath
+a fixed set of learned parameters.
+
 ## Exercise
 
 Find (or imagine, based on a plausible scenario) a real metric your team or

@@ -110,6 +110,42 @@ shared severity process before reaching a P1 — the pod lead recognized the
 symptom pattern from the readmission team's documented incident, something
 that would not have been visible before the registry existed.
 
+## How It Actually Works
+
+The reason shared context breaks down specifically around eight to ten
+people is a direct combinatorial fact, not a soft cultural observation: the
+number of pairwise relationships in a group grows as n(n-1)/2, so a team of
+8 has 28 pairs of people who might need to informally sync, while a team of
+15 has 105 — a team roughly twice the size has nearly four times the
+coordination surface. Below the threshold, one person (the manager, or
+whoever's most central) can plausibly hold enough of those pairwise
+relationships in their own head to substitute for explicit process; above
+it, the number of connections outstrips what any single person can track,
+and coordination failures (duplicated infrastructure, incompatible eval
+sets) are the direct symptom of information that used to travel through
+informal channels no longer reaching everyone who needs it. This is exactly
+why the fix at each threshold in section 1 is structural — splitting pods,
+adding a platform layer — rather than "communicate more": no volume of
+extra communication scales linearly to cover a coordination surface that's
+growing quadratically.
+
+The centralization list in section 4 follows a specific logic: each item on
+it is a *shared reference point* whose value comes precisely from being
+singular — an eval standard, an incident taxonomy, a model registry only
+functions as a comparison tool if every pod uses the same one, because the
+entire point is to let one pod's result be meaningfully compared against
+another's. The moment two pods maintain separate versions, the artifact
+stops answering cross-pod questions at all — a registry a pod can't see
+into isn't a smaller version of the shared registry, it's a different kind
+of object that happens to look similar, because "has anyone tried this
+before" is a question only answerable against a genuinely shared record.
+This is why platform teams that centralize these specific things pay for
+themselves quickly (Meridian's $180K vendor-contract catch, the near-miss
+caught via a shared severity taxonomy) while platform teams built
+preemptively, before real duplication exists to eliminate, tend to guess
+wrong about which abstractions matter — there's no duplication yet to
+observe and centralize against.
+
 ## Exercise
 
 Take your own AI org (or Meridian Health, above, at month 9) and do three

@@ -62,6 +62,34 @@ solution on a foundation-model API instead — a decision made possible only
 because the evaluation used the company's own data and real volume rather
 than trusting the vendor's headline numbers.
 
+## How It Actually Works
+
+The gap between a vendor's advertised 85% and your measured 61% is not a
+marketing exaggeration in the usual sense — it's a direct consequence of
+how "accuracy" is defined relative to a specific data distribution, and a
+vendor's benchmark distribution is chosen (deliberately or not) to make
+their system look good. A model's resolution rate is a property of the
+*pairing* between the model and the input distribution it's tested on, not
+a fixed property of the model alone — the same chatbot scores differently
+on curated FAQ tickets versus your actual technical ticket mix because the
+underlying task difficulty genuinely differs between those two
+distributions, in exactly the way a student's exam score differs between an
+easy practice test and the real exam covering harder material. This is why
+"run it on a sample of your own data before buying" isn't just due
+diligence, it's the only way to get a number that's mechanically relevant to
+your decision — a vendor's published benchmark answers a different question
+than the one you're actually asking.
+
+The pricing surprise follows a similar mechanical pattern: entry-tier
+pricing is calibrated to look attractive at low volume, but most AI
+API/platform pricing has some form of per-call or per-token cost that
+compounds, so the ratio between entry-quote and real-volume cost is often
+non-linear rather than a simple multiplier you could estimate from the
+sales page. Getting a quote at your actual expected monthly volume forces
+the vendor's pricing model to reveal its true shape (linear, tiered,
+volume-discounted, or punitively scaled) before you're contractually
+committed to discovering it the hard way on your first real invoice.
+
 ## Exercise
 
 Pick an AI vendor or tool your organization is considering (or a plausible

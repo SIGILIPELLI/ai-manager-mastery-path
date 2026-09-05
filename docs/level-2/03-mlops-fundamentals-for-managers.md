@@ -180,6 +180,40 @@ investment is fundable when expressed as **detection-window reduction
 against a quantified failure**, and rarely fundable when expressed as
 platform maturity.
 
+## How It Actually Works
+
+Training/serving skew is worth understanding at the mechanism level because
+it explains why "great offline results, no production lift" is so common
+and so hard to catch by staring at the model itself. A feature like
+"days since last purchase" sounds like one well-defined quantity, but it is
+usually computed by two entirely separate code paths: an offline batch job
+that built the training set, and a real-time service that computes it at
+inference time. If the batch job uses calendar days and the real-time
+service uses a rolling 24-hour window, or if one includes same-day
+purchases and the other doesn't, the model was trained on one distribution
+of that feature and is being fed a subtly different distribution in
+production — and because both versions are plausible-looking numbers, this
+mismatch produces no error, no crash, no validation failure. It just quietly
+degrades every prediction that depends on the skewed feature, which is
+exactly why comparing live feature values against training feature values
+statistically (not just checking that a value exists) is the only reliable
+way to catch it.
+
+The maturity model's core claim — that levels are mostly about detection
+speed, not deployment speed — follows from a basic property of how ML
+failures compound: unlike a crashed service, a degraded model keeps
+producing usable-looking output the entire time it's wrong, so the cost of
+a failure scales with the *duration it goes unnoticed*, not with the size
+of the underlying bug. The demand-forecasting example makes this concrete:
+the actual technical fix (retrain on recent data) took an afternoon and
+would have been equally cheap in week one or week nine — the $324,000 was
+entirely a function of the nine-week detection gap, not of the concept
+drift itself. This is why investment framed as "cut the detection window
+from nine weeks to under one" is a mechanically sound way to price MLOps:
+it is quantifying exactly the variable (time-to-detect) that multiplies
+directly into the cost of every future silent failure, regardless of what
+specific failure eventually occurs.
+
 ## Exercise
 
 Pick one AI or ML system your organisation runs in production — or the one

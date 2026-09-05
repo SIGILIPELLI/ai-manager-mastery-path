@@ -107,6 +107,37 @@ agents reported the AI-assisted queue felt less repetitive, which the head
 of support flagged as a likely (but unmeasured) contributor to a drop in
 agent attrition that quarter.
 
+## How It Actually Works
+
+A held-out control region is doing specific statistical work that a simple
+before/after comparison cannot: any metric measured over time is affected
+by every other thing changing concurrently — seasonality, a marketing
+campaign, a pricing change, a competitor's move — and a before/after
+comparison attributes the *entire* observed shift to the AI system, folding
+in all of those confounds as if the system caused them. A control group
+that experiences the same seasonality and the same concurrent business
+changes but not the AI intervention lets you subtract out everything that
+isn't the AI's effect, because whatever difference remains between
+treatment and control is attributable specifically to the one thing that
+differed between them. This is precisely why Bramwell's 22% deflection
+number carries real weight in a board presentation: it isn't "tickets
+dropped 22% after launch," which could mean anything, it's "tickets dropped
+22% relative to a comparable population that didn't get the feature during
+the same six weeks," which isolates the causal effect.
+
+The stated-confidence-interval habit matters for a related reason: any
+measurement taken from a sample (a 6-week test, not infinite tickets over
+infinite time) carries sampling uncertainty, and reporting a single point
+estimate implies a precision the underlying data doesn't actually support.
+"$1.1–1.4M, ±12% at 95% confidence" is not hedging — it's an honest
+statement that if the same test were re-run under similar conditions, the
+true savings would fall in that range most of the time, and reporting it
+this way is what survives an auditor re-running the analysis and getting a
+slightly different point estimate: the range was wide enough to contain
+the true effect all along, whereas a single overconfident number invites
+exactly the "your number was wrong" objection that destroys credibility on
+every subsequent report.
+
 ## Exercise
 
 Take an AI initiative you manage, are proposing, or a plausible one.

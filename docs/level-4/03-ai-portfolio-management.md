@@ -112,6 +112,39 @@ checkpoint, and reallocated the freed $750,000 to the fraud-detection
 project, which had the portfolio's highest risk-adjusted value and had
 been under-funded relative to its potential all along.
 
+## How It Actually Works
+
+Risk-adjusted value works as a ranking tool because it's computing an
+expected value across a probability distribution over outcomes, not a
+single deterministic projection — and expected value is the only quantity
+that's additive and comparable across projects with genuinely different
+risk profiles. A raw $4.2M projection for the personalization engine and a
+raw $1.7M projection for support deflection aren't actually the same kind
+of number: one is "the value if this unproven approach works," the other is
+"the value from a technique already proven at similar scale," and
+comparing them directly implicitly assumes both will succeed with equal
+likelihood, which is false by construction. Multiplying by success
+probability converts both projects onto a common footing — the value you'd
+expect to realize *on average* if you ran this exact portfolio decision
+many times — which is exactly the quantity that should drive capital
+allocation under uncertainty, the same logic that underlies expected-value
+reasoning in any domain involving probabilistic bets.
+
+Cordova's sunk-cost dynamic reveals why "decision if it fails" has to be
+set before funding, not during review: $2.1M already spent is a cost that
+no future decision can recover regardless of what happens next, so it
+should have zero bearing on whether continuing to fund the project is a
+good use of the *next* dollar — the only economically relevant question is
+whether $900,000 spent starting today, at a freshly and honestly assessed
+20% success probability, is a better use of that money than reallocating it
+to fraud detection. The psychological pull to keep funding a project after
+heavy investment is powerful precisely because it feels like abandoning the
+sunk cost is "wasting" it, but the $2.1M is equally gone whether the
+project is killed today or in another year — the only question left with
+any actual leverage is what the next dollar buys, which is exactly the
+reframing that let the COO agree once it was made explicit rather than
+implicit.
+
 ## Exercise
 
 Take your own AI portfolio (or Cordova Air's six-project portfolio, above,

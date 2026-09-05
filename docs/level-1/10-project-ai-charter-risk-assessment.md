@@ -123,6 +123,34 @@ support team":
   Module 8 template; support agents get a short async update after each
   checkpoint.
 
+## How It Actually Works
+
+A charter functions as a coordination mechanism specifically because it
+forces every ambiguity that would otherwise surface piecemeal — one
+stakeholder disagreement per week, spread across the whole project — to
+surface all at once, before any work has been sunk into a particular
+direction. Each of the seven sections corresponds to a decision that, left
+unwritten, defaults silently to whoever speaks last in whatever meeting the
+topic happens to come up in: without a written success metric, "is this
+good enough" gets decided by whoever's most persuasive near the deadline;
+without written roles, an incident gets responded to by whoever notices it
+first, not whoever's actually accountable. Writing the charter doesn't
+create new information the team didn't have — it relocates decisions that
+would otherwise be made implicitly and inconsistently to a single moment
+where they're made explicitly and are then referenceable by everyone,
+including people who join the project later and would otherwise have to
+reconstruct these decisions from institutional memory.
+
+The reason "Unknown — need to ask [specific person]" is more valuable than
+a vague or invented answer is a direct consequence of what a charter is
+*for*: it's meant to be the single artifact anyone — a new team member, an
+auditor, a future version of you six months in — can read to understand the
+project's real state. A blank field looks like an oversight; a plausible-
+sounding but made-up answer looks like settled fact and will be trusted as
+one, which is far more dangerous than an acknowledged gap, because it
+removes the very signal (visible uncertainty) that would prompt someone to
+go verify it before relying on it.
+
 ## Exercise (the deliverable)
 
 Choose a real AI project from your own organization, or a plausible one if

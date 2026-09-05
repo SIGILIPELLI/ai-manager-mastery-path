@@ -74,6 +74,41 @@ review regardless of the model's confidence score. Both changes come
 directly from applying this module's frameworks *before* an incident, not
 after one.
 
+## How It Actually Works
+
+Hallucination and prompt injection are both consequences of the same
+underlying mechanism, not two unrelated bugs — an LLM has no separate
+channel for "instructions" versus "data." Everything the model receives,
+whether it's the system prompt written by your engineers or the text of a
+vendor email being summarized, is concatenated into one token sequence and
+processed identically by the same attention layers. The model is trained to
+predict plausible continuations of that combined sequence, so text embedded
+inside "data" that reads like an instruction ("ignore previous instructions
+and...") competes for influence over the output exactly the way a real
+instruction would, because the architecture has no structural firewall
+between the two — only the *statistical tendency*, learned during training,
+to weight the system prompt more heavily. That tendency is strong but not
+absolute, which is precisely why "treat external content as untrusted"
+reduces but never eliminates the risk: it's a probabilistic property of a
+trained model, not a hard guarantee enforceable at the architecture level,
+the way input sanitization can be a hard guarantee against SQL injection in
+traditional software.
+
+This is also why "limit what the model is authorized to do" and "keep a
+human in the loop" are the mitigations that actually hold, while "make the
+model more robust" is the one that doesn't fully close the gap: robustness
+improvements shift the *probability* that an injected instruction succeeds,
+but they operate on the same continuous, non-deterministic mechanism that
+produces the risk in the first place, so they can lower the failure rate
+without ever driving it to zero. A hard authorization boundary sitting
+outside the model — the model can draft a reply, but a separate,
+non-LLM-controlled system decides whether "approved" in that draft is
+allowed to trigger a real payment change — doesn't depend on the model
+behaving correctly at all; it fails safe regardless of what token sequence
+the model was tricked into producing, which is the actual reason it's
+described as the last line of defense rather than one mitigation among
+equals.
+
 ## Exercise
 
 Take an AI project (real or plausible) and score it on the two axes in

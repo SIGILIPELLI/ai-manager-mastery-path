@@ -103,6 +103,40 @@ before any complaint arose, that it had identified and corrected functional
 drift in a high-risk system. That documentation is exactly what regulators
 ask for first.
 
+## How It Actually Works
+
+The Larkspur drift — a drafting aid becoming a de facto decision-maker at a
+94% unedited-approval rate — happens through the exact same automation-
+complacency mechanism covered in Level 1's risk basics module, but it's
+worth tracing why it's specifically *undetectable* without a monitoring
+metric built in advance. Nothing about the system's behavior changed
+between launch and month six: the LLM kept generating the same kind of
+draft, at the same quality, with the same human-review step nominally in
+place. What changed was the loan officers' behavior — as they experienced
+the drafts being correct often enough, their subjective confidence rose
+faster than the model's actual reliability, and the review step degraded
+from genuine scrutiny to a formality, exactly as predicted by the
+rubber-stamping pattern in Level 2's responsible-AI checklist. This is
+precisely why "edit rate" has to be instrumented *before* launch: the drift
+produces no error, no support ticket, no system log entry distinguishing a
+carefully-reviewed approval from a rubber-stamped one — the only trace it
+leaves is a statistical pattern in how often humans change the output, and
+that pattern is invisible unless someone is already measuring it.
+
+The system-of-record inventory's outsized importance follows from a
+different mechanical fact about audits: an auditor or regulator cannot ask
+about a system they don't know exists, so an organization's actual
+compliance exposure is bounded by what it can produce a complete list of,
+not by what any individual system's paperwork says. A single system with
+excellent documentation but sitting outside the inventory is functionally
+invisible to the governance process — it will never be pulled into a
+review cycle, never get a risk tier, never surface in an audit response
+unless someone happens to remember it exists. This is why organizations
+fail audits over an incomplete list rather than over a specific system's
+non-compliance: the inventory is the mechanism that converts "we have a
+governance process" from a claim about intentions into a claim that's
+actually verifiable against every system currently running.
+
 ## Exercise
 
 Pick an AI system in your organization (or Larkspur Lending's drafting

@@ -108,6 +108,41 @@ confidence, never input distribution — exactly the gap that let a two-week
 drift run undetected. That monitor is now part of the shared eval framework
 (Module 5) for every claims-adjacent model at the company.
 
+## How It Actually Works
+
+Nordway's confidence-score threshold failing to catch the drift illustrates
+a specific and common blind spot: a model's confidence score is calibrated
+against the training distribution, so it reflects how typical an input
+*looks relative to what the model has seen before* — but a shift in the
+input distribution itself (more storm-damage claims, different loss
+descriptions) doesn't necessarily produce low-confidence predictions if the
+new inputs happen to resemble existing feature patterns closely enough. The
+model can be confidently, consistently wrong on an entire new sub-population
+of claims precisely because confidence measures internal consistency with
+what the model learned, not correctness relative to ground truth it has
+never observed. This is exactly why output-confidence monitoring alone
+misses this class of failure and input-distribution monitoring is a
+structurally different signal: it compares the *shape of incoming data*
+against the training distribution directly, independent of what the model
+thinks about it, which is the only way to catch a shift the model itself
+is not equipped to flag.
+
+The rollback-before-root-cause ordering in step 3 reflects a basic
+asymmetry in cost between the two courses of action: every additional hour
+a degraded model keeps serving live traffic accrues real, compounding harm
+(more bad claims decisions, more biased declines, more unsafe outputs),
+while root-causing under pressure is slow and error-prone precisely because
+it's happening under the stress of live harm continuing to accumulate.
+Rolling back to a known-good, already-validated model version stops the
+bleeding immediately and converts the situation from "harm ongoing, cause
+unknown" to "harm stopped, cause to be determined at leisure" — a strictly
+better position from which to investigate, since nothing about
+understanding the failure requires the broken model to keep running. This
+is also why rollback has to be pre-built rather than improvised: a rollback
+path invented during an active incident is itself an untested piece of code
+being deployed under pressure, which risks compounding the original
+failure with a second, self-inflicted one.
+
 ## Exercise
 
 Take an AI system you manage or have access to (or Nordway's claims model,

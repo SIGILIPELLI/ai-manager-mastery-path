@@ -106,6 +106,38 @@ once genuine duplication evidence existed at that layer too — and by then
 the platform team, having earned trust with the registry, had pods actively
 requesting it rather than needing to be sold on it.
 
+## How It Actually Works
+
+The registry-before-feature-store sequencing works because the two
+capabilities have fundamentally different dependency structures on
+organizational maturity. A model/experiment registry has almost no
+prerequisite: it's a place to record what was tried and what happened, and
+its value (preventing the exact re-run-a-known-negative failure Ashgrove
+hit) is realized the moment even two teams start using it consistently. A
+feature store, by contrast, requires the organization to already agree on
+feature definitions, freshness requirements, and access patterns across
+teams whose actual needs may still be genuinely different — building it
+before that convergence exists means guessing at an abstraction the real
+usage patterns haven't revealed yet, which is exactly why "no duplication
+evidence yet existed at that layer" was the correct reason to defer it: an
+abstraction built ahead of evidence encodes assumptions instead of observed
+need, and those assumptions are usually wrong in ways only visible after
+multiple teams have organically converged on similar patterns.
+
+Tracking adoption rate rather than lines of code shipped follows from what
+a platform is actually for: eliminating organization-wide duplication only
+happens if pods stop maintaining their own version and use the shared one
+instead, so a platform's entire value proposition is contingent on adoption
+in a way most engineering work isn't — a beautifully engineered registry
+nobody uses has produced zero reduction in duplicate spend or duplicate
+experiments, the exact problem it was built to solve. This is also why an
+escape hatch matters mechanically rather than just diplomatically: a pod
+that's blocked from opting out of a platform that genuinely doesn't fit its
+need will build shadow infrastructure anyway, but now invisibly, which
+reintroduces the original duplication problem in a form the platform team
+can no longer see or measure — an explicit, documented opt-out keeps the
+duplication visible and countable, even when it can't be eliminated.
+
 ## Exercise
 
 Take your own multi-team AI org (or Ashgrove Financial, above, at month 17).

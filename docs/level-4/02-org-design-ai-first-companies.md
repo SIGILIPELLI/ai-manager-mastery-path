@@ -93,6 +93,42 @@ that had never gone through any bias testing. The gap was closed within
 one quarter, avoiding what would very plausibly have been a regulatory
 finding if a state insurance examiner had found it first.
 
+## How It Actually Works
+
+Palisade's shadow "data analyst" hires forming outside any governance
+review is a predictable consequence of how organizational demand behaves
+when supply is centrally constrained: when a business unit's actual AI
+needs outpace what a central team can serve at the priority and pace that
+unit needs, the unit doesn't stop needing the capability — it acquires it
+through whatever channel is available, and if the official channel (going
+through the central AI org) is slow or misaligned with the unit's roadmap,
+an unofficial channel (hiring "analysts" who are functionally doing ML
+engineering) fills the gap. This is the organizational-design analogue of
+the shadow-infrastructure pattern in Level 3 Module 5: capability that is
+needed but not supplied through sanctioned means gets built anyway, just
+invisibly, which is exactly why it evaded the model registry and bias
+testing — the entire point of a shadow structure is that it exists outside
+the systems designed to catch it. The underwriting unit wasn't behaving
+badly; it was responding rationally to a structure that couldn't keep pace
+with its differentiated needs, which is precisely the failure mode the
+"three business units independently build the same capability" warning
+sign in section 4 is designed to catch before it produces an unreviewed
+production model.
+
+The reporting-line mismatch mechanism works similarly: an organization's
+resourcing and prioritization decisions flow through whoever controls
+budget for a function, so if AI reports to a role whose primary mandate is
+internal data quality (a CDO focused on data infrastructure) while the
+company's actual strategic bet is customer-facing AI products, every
+budget and headcount trade-off gets evaluated against the CDO's mandate,
+not the company's actual AI strategy — the reporting line isn't just
+symbolic, it's the literal mechanism by which competing priorities get
+adjudicated. This is why a mismatched reporting line reliably produces
+under-resourced product-facing AI work even when leadership verbally
+agrees AI-driven products matter: the org chart, not the strategy
+document, is what actually determines whose priorities win a resource
+conflict.
+
 ## Exercise
 
 Take your own organization (or Palisade Mutual, pre-reorg).

@@ -91,6 +91,39 @@ taxonomy and postmortem process. Explicitly out of scope: model
 architecture decisions, pod tooling choices, and product roadmap — those
 stay with the pods.
 
+## How It Actually Works
+
+This capstone's design — a two-person liaison function with three
+explicitly bounded jobs, sitting at 22 AI ICs — is a direct application of
+the sizing and mandate mechanics from Modules 5 and 9, worth naming
+explicitly. At this headcount, no real evidence of cross-pod duplication
+has yet accumulated (Module 5's threshold for full platformization sits
+much higher), so a full CoE would be building process ahead of the
+organizational scar tissue that would tell it what to build — which is
+exactly the "platform built too early" failure mode. The three jobs
+assigned here (review cadence, inventory, incident taxonomy) are
+specifically the ones that don't require pod-level technical duplication to
+justify — they're coordination functions whose value comes from being
+singular regardless of org size, the same logic that put the
+model/experiment registry first in Module 5's priority order.
+
+Ridgeline's framework structure also demonstrates why review cadence,
+inventory, and severity taxonomy have to be owned by the *same* function
+rather than split across three: each depends on the others to mean
+anything. A review cadence without an inventory has no reliable list of
+what needs reviewing on schedule; an incident taxonomy without a review
+process that already tiered each system has to re-derive risk severity
+from scratch during an active incident, exactly the worst moment to do it;
+and an inventory nobody keeps current from ongoing reviews decays back into
+the "we don't have a complete list" failure mode Module 2 identifies as the
+actual cause of most failed audits. The three functions form a single
+feedback loop — reviews populate and refresh the inventory, the inventory
+determines review cadence, and both together determine how fast an
+incident can be correctly triaged — which is why bundling them under one
+small, accountable pair works at this scale, while splitting them across
+uncoordinated owners would silently break the loop the first time one part
+drifted out of sync with the others.
+
 ## Stretch goals
 
 - Draft the actual pre-launch review document for the support assistant's
