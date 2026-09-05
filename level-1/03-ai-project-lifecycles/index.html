@@ -818,6 +818,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2239,6 +2250,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2422,6 +2444,37 @@ it a win, the manager convenes the team: is 71% close enough that another
 They choose one more iteration, hit 78%, and only then move into
 integration. The stage gates made three real decisions visible and
 deliberate instead of implicit.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>Stage gates work as a management tool because they exploit an asymmetry
+in how information becomes available during an AI project: uncertainty
+about <em>achievability</em> is highest at the start and only resolves through
+direct empirical work, not through more planning meetings. A software
+requirements document can be gotten "mostly right" by thinking harder about
+it, because the constraints are usually about human/business logic that a
+smart person can reason through in advance. A model's achievable precision
+on real data cannot be reasoned to in advance — it can only be discovered by
+actually training something and measuring it against held-out examples,
+because the relationship between the available data's signal-to-noise ratio
+and any model's achievable ceiling is not analytically knowable ahead of
+time. This is the mechanical reason "kill criteria" at stages 1–3 aren't
+pessimism — they're the only points where the cost of learning "this doesn't
+work" is still cheap, because a failed feasibility experiment costs weeks,
+while discovering the same ceiling after building full serving
+infrastructure in stage 5 costs months and carries sunk-cost pressure to
+ship anyway.</p>
+<p>The 71%-vs-75% moment in the worked example illustrates the specific trap a
+gate is designed to prevent: without a pre-agreed number, "close enough" is
+a social judgment made under the exact conditions (deadline pressure, sunk
+cost, a team that wants a win) most likely to bias it downward. Writing the
+threshold down <em>before</em> the proof-of-concept results exist removes the
+optimization-after-the-fact problem — nobody can quietly redefine "done" to
+match whatever number the model happens to hit, because the metric was
+fixed when no one yet knew which way it would cut. This is also why held-out
+evaluation data matters mechanically at the Development → Integration gate
+specifically: a model's score on data it was tuned against is not evidence
+of real-world performance, only of how well it fit that data — the gate
+criterion is only meaningful if the evaluation set was truly never used to
+make any modeling decision.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Pick a real or plausible AI project. Write out all seven lifecycle stages
 from the first table, and for each one write: (1) a realistic time estimate

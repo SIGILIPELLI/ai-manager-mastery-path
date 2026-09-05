@@ -1171,6 +1171,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2305,6 +2316,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2604,6 +2626,37 @@ with modelling paused until it existed. That conclusion had been reachable
 in week three of the project rather than month five. The missing ingredient
 was never technical skill — it was a stopping rule that forced the question
 "is the signal here at all?" to be asked out loud.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>"Metric improves in small increments every week for months" is a warning
+sign for a precise statistical reason: it's the signature of the multiple-
+comparisons problem playing out over time. Every time the team evaluates a
+new idea against the same frozen holdout set and only keeps the ones that
+improve the score, they are running an implicit selection process — and
+some fraction of tested ideas will appear to help purely by chance, because
+a finite holdout set has sampling noise just like any other measurement.
+Keep testing and keeping "winners" against the same fixed set for long
+enough, and the model gradually specializes to that specific set's noise
+rather than to the underlying real-world pattern, exactly the way a student
+who sees the same practice exam repeatedly memorizes its particular
+questions rather than the subject. This is why a genuinely frozen,
+infrequently-refreshed holdout is not bureaucratic caution but the only
+thing standing between "the metric moved" and "the metric moved on data we
+already leaked information about" — and it's why the warning-sign question
+is specifically "when was the holdout last refreshed," not "is the metric
+still improving."</p>
+<p>The offline/online mismatch warning sign has an equally mechanical
+explanation: an offline eval set is, by construction, a sample from a
+distribution frozen at the moment it was collected, while live traffic is
+drawn from whatever distribution exists <em>right now</em> — user behavior,
+seasonal patterns, upstream data pipeline changes, and adversarial
+adaptation (users learning to game a fraud model, for instance) all shift
+the live distribution continuously in ways the static holdout cannot
+capture. A large offline gain with no matching production movement usually
+means the experiment improved performance on a feature or pattern that is
+well-represented in the frozen holdout but rare or shifted in current live
+traffic — which is exactly the gap the "what's the eval-to-live gap"
+question is designed to surface before a team spends another quarter
+chasing offline numbers that will never move a real business metric.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Take a current or recent ML effort on your team (or a plausible one) and do
 three things.</p>

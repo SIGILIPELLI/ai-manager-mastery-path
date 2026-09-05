@@ -913,6 +913,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2261,6 +2272,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2433,6 +2455,36 @@ offer-personalization as a fast-follow, or extend the timeline by 3–4 weeks
 to include it now. The stakeholder, seeing the tradeoff made explicit,
 chooses the fast-follow — a decision that would have been an unspoken,
 resentment-generating slip if scope had just quietly expanded instead.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>The range-and-checkpoint framework works because it aligns the <em>shape</em> of a
+communicated estimate with the actual shape of the underlying uncertainty,
+instead of forcing a single number onto a process that doesn't produce one.
+A traditional feature's remaining unknowns shrink roughly linearly as work
+gets done — each day of coding removes a known, bounded amount of remaining
+work. An AI project's uncertainty is lumpy: almost all of it is concentrated
+in a small number of specific unknowns (does this data support the target
+accuracy at all, does the chosen architecture converge on it) that resolve
+suddenly, at the moment an experiment finishes, rather than gradually. A
+single point estimate given at kickoff is really a guess at the <em>outcome</em> of
+an experiment that hasn't been run yet — mathematically no more grounded
+than a coin flip weighted by experience — while a range that narrows at each
+checkpoint is reporting the estimate only after the relevant uncertainty has
+actually resolved. This is why the range at each stage in the table gets
+narrower specifically <em>after</em> a checkpoint and not gradually across the
+weeks in between: nothing informative happens to the estimate during an
+experiment's run, only at its conclusion.</p>
+<p>The scope-creep discipline works for a related mechanical reason: a written
+success metric acts as the fixed reference point against which any new
+request's marginal cost can be honestly compared, because without it,
+"wouldn't it be nice to also predict the offer type" is being compared to
+nothing — there's no anchor showing that offer-type prediction is a
+materially different modeling problem (a different target variable, its own
+feasibility question, its own evaluation data) rather than a small addition
+to the existing one. Logging the request against the original metric forces
+the comparison to happen explicitly, at the moment the tradeoff is still
+cheap to make, rather than being absorbed silently into "the model" as a
+single expanding blob of work whose real cost only becomes visible once the
+combined timeline has already slipped.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Take an AI project you're planning (real or plausible). Write: (1) the
 kickoff-stage range-and-checkpoint statement you'd give a stakeholder,

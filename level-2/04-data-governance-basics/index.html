@@ -1255,6 +1255,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2305,6 +2316,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2692,6 +2714,34 @@ manager's actionable lesson is a sequencing one. The privacy and purpose
 review belongs at the point the dataset is assembled, not at the point the
 model is ready. It costs almost nothing at the start and it is the single
 highest-leverage schedule change available to you.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>The reason "delete the row" doesn't erase a customer's data from a deployed
+model is a direct consequence of how training works mathematically: a
+model's parameters are the accumulated result of many small gradient
+updates, each nudged by every training example it has ever seen, and those
+nudges are summed and blended into weights that no longer preserve any
+addressable link back to a specific row. There is no operation equivalent
+to "find and delete this customer's contribution" the way there is for a
+database record, because the information isn't stored in per-record form —
+it's diffused across potentially millions of parameters in a way that isn't
+attributable or reversible after the fact. The only mechanism that
+genuinely removes a record's influence is retraining from a corrected
+dataset that no longer contains it, which is exactly why "document the
+retraining cycle" is the honest, workable default rather than "we deleted
+it" — the deletion is real at the source, and the model's exposure closes
+only on the next retrain.</p>
+<p>Lineage's importance follows the same logic in reverse: if you can't trace
+which source rows fed a given training set, you can't even identify which
+records need to be removed on the next retrain, let alone verify that a
+past training run didn't touch data it shouldn't have. This is why the
+healthtech example's finding 3 (no lineage) was the expensive one rather
+than finding 1 or 2 — a missing purpose basis or an overlong retention
+period are each fixable by a policy change going forward, but a training
+set assembled from an untraceable joined export means the company had no
+way to <em>scope the correction</em> at all; every downstream question ("which
+records must we remove," "did we train on the closed accounts," "is this
+model clean now") was unanswerable not because the answer was bad, but
+because the record needed to compute the answer didn't exist.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Choose one dataset your team uses, or plans to use, for an AI project.</p>
 <ol>

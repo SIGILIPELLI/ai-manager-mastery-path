@@ -1609,6 +1609,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2261,6 +2272,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2471,6 +2493,36 @@ to same-day for requests within quota. Attrition on the team dropped to
 zero over the following three quarters, and in the next round of exit
 interviews across the broader org, two engineers cited the Cartway ML
 team's new ladder as a reason they'd asked to transfer in rather than out.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>The forced-choice-into-management pattern at Cartway has a specific
+structural cause worth naming: when only one axis of a job ladder (the
+management track) carries both the compensation increases and the title
+that signals seniority externally, every other form of value someone
+creates — setting an eval standard the whole org now depends on, leading a
+migration that changes what every pod builds on — has no ladder rung to
+register on. That value is real and the org is visibly using it, but
+because the level system has no vocabulary for it, it accumulates as
+informal reputation rather than as anything that shows up in comp
+benchmarking, external recruiting conversations, or the person's own
+sense of whether they're progressing. A recruiter's outbound message
+naming a concrete "Staff Engineer, $X" offer directly compares against
+what the person actually has, while their org's informal "you're clearly
+one of our best" has nothing to compare against — which is why the
+departures were specifically the two people doing staff-level work without
+a staff-level rung to stand on, not a random sample of the team.</p>
+<p>The compute-quota fix reveals a related mechanism: for research and applied
+ML work specifically, the rate at which someone can learn whether an idea
+works is bottlenecked by how fast they can run an experiment, so a
+two-week ticket queue doesn't just slow down one task, it compounds against
+every subsequent decision that experiment's result would have informed —
+each blocked experiment delays the next hypothesis in the queue behind it
+(the same sequential dependency Module 01 of Level 2 covers for
+experimentation cadence generally). A senior researcher's actual
+productivity is throttled by that queue in a way salary cannot compensate
+for, because no amount of pay increases the number of experiments they can
+run per week — which is exactly why "blocked by GPU quota" surfaces in exit
+interviews as decisive even for people who were not underpaid: the
+constraint binds on a different resource than money can buy back.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Take your own AI org (or Cartway Freight, above, pre-fix).</p>
 <ol>

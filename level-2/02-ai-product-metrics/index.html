@@ -1205,6 +1205,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2317,6 +2328,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2664,6 +2686,34 @@ specific, monitorable trigger: <strong>queue cost per review</strong>.</p>
 <p>The decision made was Model A, with a guardrail metric of review-queue
 latency and a standing agreement to revisit the threshold if per-review cost
 exceeds $15.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>The precision/recall tradeoff isn't a modeling limitation the team could
+engineer away with more effort — it's a direct geometric consequence of how
+a classifier turns a continuous score into a binary decision. Most models
+output a probability or confidence score, and "flag as fraud" simply means
+"score above threshold T." Sliding T down catches more true positives
+(recall rises) but also sweeps in more low-confidence legitimate cases
+(precision falls), and sliding it up does the reverse — there is no value of
+T that maximizes both simultaneously unless the model achieves perfect
+separation between classes, which essentially never happens on real data.
+This is why the operating point is fundamentally a business decision: the
+model produces an entire curve of precision/recall pairs (the ROC or
+precision-recall curve), and choosing where on that curve to operate is
+choosing a ratio of false-positive cost to false-negative cost — information
+the model itself has no access to and cannot decide for you.</p>
+<p>F1's failure to rank Model A above Model B in the worked example is also
+mechanical, not a fluke: F1 is the harmonic mean of precision and recall,
+which by construction weights the two equally regardless of your actual
+cost ratio. The harmonic mean penalizes an imbalanced pair more gently than
+you'd expect when the imbalance happens to align with whichever of
+precision or recall is already higher — it has no way to know that this
+business's false-negative cost ($180) is fifteen times its false-positive
+cost ($12), because that ratio isn't an input to the formula at all. Any
+single blended metric (F1, accuracy, AUC) necessarily discards the
+information a real operating decision needs, which is exactly why the cost
+table's dollar arithmetic — built from the actual confusion-matrix counts
+and the business's real cost ratio — outranks every headline single-number
+metric a model can report.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Take an AI system in your organisation, or a plausible one, and build its
 metric bridge.</p>

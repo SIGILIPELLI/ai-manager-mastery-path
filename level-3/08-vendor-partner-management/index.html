@@ -1721,6 +1721,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2261,6 +2272,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2494,6 +2516,37 @@ went live in production. The renegotiated contract cost 6% more annually —
 a cost the team justified to finance as insurance against a repeat of the
 8-month incident, which had cost an estimated $40,000 in engineering
 firefighting plus unquantified reputational cost from the complaint spike.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>Solmar's malformed-itinerary failure illustrates why "the vendor improved
+general performance" and "your specific integration broke" are entirely
+compatible outcomes, not a contradiction — because a foundation model
+update is optimized and evaluated against the vendor's own broad benchmark
+suite, not against any individual customer's specific downstream parsing
+logic. Solmar's system had been tuned around the old model's particular
+response format (a specific structure the old model happened to produce
+reliably), and nothing in the vendor's update process has visibility into,
+or responsibility for, preserving that incidental behavior — from the
+vendor's perspective, average quality genuinely went up, while from
+Solmar's perspective, a downstream parser that depended on an
+undocumented, informally-relied-upon output shape broke. This is the
+general mechanism behind every "vendor-side model change" failure mode:
+you are always depending on more of the model's behavior than what's
+formally specified in the API contract, and a version change is free to
+alter anything outside that formal contract without breaching it.</p>
+<p>Version pinning fixes this mechanically by decoupling two events that would
+otherwise be forced to happen simultaneously: the vendor's decision to ship
+an improvement, and your system's exposure to that improvement's side
+effects. Without pinning, every customer is silently migrated the moment
+the vendor flips a switch, so the blast radius of any behavioral change is
+every dependent system at once, with zero warning and zero opportunity to
+re-validate first. With pinning, the new version exists but doesn't affect
+you until you deliberately opt in after testing against your own eval
+suite — converting an involuntary, simultaneous exposure into a scheduled,
+voluntary migration you control the timing of. That's precisely why
+Solmar's renegotiated contract paired pinning with a quarterly-eval clause:
+pinning alone only delays the exposure; the eval suite is what lets you
+decide, on your own evidence, when the new version is actually safe to
+adopt.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Take a real or plausible AI vendor relationship at your organization.</p>
 <ol>

@@ -874,6 +874,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2239,6 +2250,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2403,6 +2425,37 @@ either collect more representative data or adjust the modeling approach,
 rather than launching a model that would have systematically disadvantaged
 that group — a discovery made <em>before</em> launch specifically because the
 subgroup-performance check was a gate, not an afterthought.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>Aggregate accuracy hides subgroup harm for a specific statistical reason:
+overall accuracy is a weighted average across every example the model was
+evaluated on, and a large majority subgroup can mathematically dominate that
+average even while a smaller subgroup performs badly. If lower-income zip
+codes make up 15% of the evaluation set and the model is wrong on them twice
+as often, the aggregate number barely moves — the arithmetic simply doesn't
+surface a problem confined to a minority of rows unless someone deliberately
+slices the evaluation by that variable. This is why "measure subgroup
+performance" isn't an ethical nicety layered on top of the real evaluation —
+it's a correction for a measurement blind spot that exists in the standard
+metric by construction, and no amount of scrutinizing the <em>aggregate</em> number
+more carefully will ever reveal it.</p>
+<p>The zip-code example also shows exactly how historical bias becomes
+sampling bias mechanically, without anyone adding it on purpose. If a
+population was historically approved for loans at a lower rate, that
+population is underrepresented among <em>approved</em> applicants in the training
+data — and a model trained to predict "will this applicant be approved"
+learns primarily from whatever pattern distinguished approved from declined
+applicants in the past. Where a group has thin representation in the
+training set, the model has correspondingly little signal to learn its true
+approval-worthy patterns, so it falls back on whatever coarse correlations
+generalize best from the majority — and zip code, even when never used
+directly, so tightly correlates with income and historically-disadvantaged
+status in a segregated housing market that the model effectively rediscovers
+it as a proxy variable during training, regardless of anyone's intent to
+exclude it. Removing a "protected" column from the input data does not
+remove this pathway, because the model can reconstruct the same signal from
+correlated features — which is exactly why the checklist asks for outcome
+testing by proxy variables, not just a check of which columns are in the
+training set.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Take an AI project (real or plausible) from your own context. Run it through
 the six-item checklist in section 3, writing one or two sentences for each

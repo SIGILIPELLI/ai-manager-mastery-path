@@ -1272,6 +1272,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2283,6 +2294,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2683,6 +2705,36 @@ because nothing forced these four facts into the same room.</p>
 solved by better modelling. Four of the five fixes were forums and decision
 rights — the cheapest interventions available to a manager, and the ones
 that only work if applied before the seams fail.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>The 84%-accuracy-but-wrong-metric failure in the worked example is the same
+mechanism from Module 02 replaying at the org-design level rather than the
+metrics level: overall routing accuracy is a single blended number that
+implicitly treats every misroute as equally costly, when a misrouted fraud
+case costs roughly sixty times a misrouted routine claim. Optimizing that
+blended metric pulls the model toward whatever reduces the <em>count</em> of
+wrong routes, which is dominated by the high-volume routine class, not
+toward minimizing expected dollar cost, which is dominated by the rare but
+expensive fraud class. The reason this went undetected for four months
+isn't that the ML team was careless — it's that nobody with the cost
+numbers (the 60x ratio lives in claims operations and finance, not in the
+model repo) ever fed them into the metric the model was actually being
+optimized against. This is precisely why the decision-rights matrix assigns
+the operating-point decision to the manager rather than to ML: the
+information required to set it correctly is structurally split across
+functions, and only the manager's role sits at the intersection of both
+halves.</p>
+<p>The feature-availability failure has an equally structural explanation:
+training and serving are, in most architectures, two different code paths
+computing supposedly the same feature — a batch data warehouse table for
+training, a real-time request path for serving — and nothing in the model-
+training process checks whether a feature that exists in the historical
+warehouse will exist at inference time on a fresh claim. The mismatch is
+invisible during model development because training only ever sees the
+warehouse version; it only becomes visible when someone tries to wire the
+model into the live serving path, which is why moving engineering into the
+experiment review from week one closes the gap mechanically — it puts a
+person who understands the serving-time data availability in the room
+before, not after, the model commits to features that path can't supply.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Take a current cross-functional AI initiative, or design one for a
 plausible project.</p>

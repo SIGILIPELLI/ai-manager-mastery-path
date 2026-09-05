@@ -986,6 +986,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2239,6 +2250,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2402,6 +2424,38 @@ reply containing action words like "approved" or "updated" for manual
 review regardless of the model's confidence score. Both changes come
 directly from applying this module's frameworks <em>before</em> an incident, not
 after one.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>Hallucination and prompt injection are both consequences of the same
+underlying mechanism, not two unrelated bugs — an LLM has no separate
+channel for "instructions" versus "data." Everything the model receives,
+whether it's the system prompt written by your engineers or the text of a
+vendor email being summarized, is concatenated into one token sequence and
+processed identically by the same attention layers. The model is trained to
+predict plausible continuations of that combined sequence, so text embedded
+inside "data" that reads like an instruction ("ignore previous instructions
+and...") competes for influence over the output exactly the way a real
+instruction would, because the architecture has no structural firewall
+between the two — only the <em>statistical tendency</em>, learned during training,
+to weight the system prompt more heavily. That tendency is strong but not
+absolute, which is precisely why "treat external content as untrusted"
+reduces but never eliminates the risk: it's a probabilistic property of a
+trained model, not a hard guarantee enforceable at the architecture level,
+the way input sanitization can be a hard guarantee against SQL injection in
+traditional software.</p>
+<p>This is also why "limit what the model is authorized to do" and "keep a
+human in the loop" are the mitigations that actually hold, while "make the
+model more robust" is the one that doesn't fully close the gap: robustness
+improvements shift the <em>probability</em> that an injected instruction succeeds,
+but they operate on the same continuous, non-deterministic mechanism that
+produces the risk in the first place, so they can lower the failure rate
+without ever driving it to zero. A hard authorization boundary sitting
+outside the model — the model can draft a reply, but a separate,
+non-LLM-controlled system decides whether "approved" in that draft is
+allowed to trigger a real payment change — doesn't depend on the model
+behaving correctly at all; it fails safe regardless of what token sequence
+the model was tricked into producing, which is the actual reason it's
+described as the last line of defense rather than one mitigation among
+equals.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Take an AI project (real or plausible) and score it on the two axes in
 section 2 (impact if wrong, reversibility), placing it in one of the four

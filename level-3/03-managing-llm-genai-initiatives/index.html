@@ -1581,6 +1581,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2261,6 +2272,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2481,6 +2503,36 @@ for mandatory human review, and a prompt-compression pass that cut token
 usage by 40%, bringing projected cost to $8,100/month — still above the
 original budget, but a plannable conversation about raising it rather than
 a surprise invoice discovered after scale-up.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>The "demo looks basically done" illusion has a specific mechanical cause: a
+demo built on ten hand-picked or hand-tried articles samples from exactly
+the region of input space the builder already knows the model handles well,
+because they kept iterating on prompts until those ten examples looked
+good. That process, by construction, cannot surface a failure mode that
+only appears on inputs outside the demo set — like articles about ongoing
+litigation, which is a thin slice of the full article distribution and
+therefore was never among the ten chances the builder happened to try. This
+is the same distributional mismatch as a vendor's cherry-picked benchmark
+in Module 07 of Level 1, just self-inflicted rather than sold to you: a
+system's apparent quality is always relative to whatever inputs it was
+checked against, and a demo's input set is selected — consciously or not —
+for exactly the property of "looking good," which structurally excludes
+the long tail where production failures live.</p>
+<p>The cost blow-up at scale is a mechanical consequence of how LLM pricing
+composes with traffic growth in a way training-based ML cost does not: a
+classical model's training cost is paid once regardless of how many
+predictions it later serves, so inference is comparatively cheap and mostly
+fixed-infrastructure; an LLM API charges per token on every single call, so
+total cost is a direct linear function of interaction volume with no
+amortization effect. Fenwick's summary feature didn't get less efficient
+between 200 and 3,000 articles/day — the per-call cost stayed the same
+$0.15 — but because that cost multiplies against volume with no fixed
+component to spread it over, a 15x volume increase produces almost exactly
+a 15x cost increase. This is exactly why "model the cost at your real
+planned scale before launch" isn't caution for its own sake — a linear
+cost function has no forgiving regime the way amortized fixed costs do; the
+invoice at scale is knowable in advance from the per-call cost and the
+volume plan alone, with no surprises hiding in between.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Take an LLM/GenAI initiative your org is running or considering.</p>
 <ol>
