@@ -1,3 +1,7 @@
+---
+description: "Setting AI Project Expectations — Unlike a typical feature build, an AI project's duration depends on questions that can only be answered by doing the…"
+---
+
 # 06 · Setting AI Project Expectations
 
 The single most common source of AI project failure isn't a bad model — it's

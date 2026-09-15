@@ -1,3 +1,7 @@
+---
+description: "Budgeting for AI Projects — Software budgeting is mostly a headcount exercise: decide how many people for how long, add tooling, done. AI budgeting breaks…"
+---
+
 # 09 · Budgeting for AI Projects
 
 Software budgeting is mostly a headcount exercise: decide how many people

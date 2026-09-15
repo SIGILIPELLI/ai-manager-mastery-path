@@ -1,3 +1,7 @@
+---
+description: "Data Governance Basics — Data governance has an image problem. To most engineering teams it sounds like a committee that slows things down, and to most…"
+---
+
 # 04 · Data Governance Basics
 
 Data governance has an image problem. To most engineering teams it sounds

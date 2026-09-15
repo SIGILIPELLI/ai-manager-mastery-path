@@ -1,3 +1,7 @@
+---
+description: "Capstone — Full AI Strategy, Governance & Org Design — This capstone integrates the entire program — strategy, portfolio, governance, org design, culture…"
+---
+
 # 10 · Capstone — Full AI Strategy, Governance & Org Design
 
 This capstone integrates the entire program — strategy, portfolio,

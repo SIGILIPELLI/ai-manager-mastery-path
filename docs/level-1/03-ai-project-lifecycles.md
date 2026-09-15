@@ -1,3 +1,7 @@
+---
+description: "Understanding AI Project Lifecycles — An AI project's lifecycle looks nothing like a typical feature build's linear 'design → build → ship' flow. It…"
+---
+
 # 03 · Understanding AI Project Lifecycles
 
 An AI project's lifecycle looks nothing like a typical feature build's linear

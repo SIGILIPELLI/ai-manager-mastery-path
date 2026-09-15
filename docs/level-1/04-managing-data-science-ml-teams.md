@@ -1,3 +1,7 @@
+---
+description: "Managing Data Science & ML Teams — Data scientists and ML engineers are often managed by people coming from a general software engineering or product…"
+---
+
 # 04 · Managing Data Science & ML Teams
 
 Data scientists and ML engineers are often managed by people coming from a

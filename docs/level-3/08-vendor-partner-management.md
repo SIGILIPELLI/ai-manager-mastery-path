@@ -1,3 +1,7 @@
+---
+description: "Vendor & Partner Management for AI — AI vendor relationships carry risks generic software procurement doesn't: model behavior can change without a version…"
+---
+
 # 08 · Vendor & Partner Management for AI
 
 AI vendor relationships carry risks generic software procurement doesn't:

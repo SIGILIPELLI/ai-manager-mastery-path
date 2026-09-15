@@ -1,3 +1,7 @@
+---
+description: "AI Procurement & Build-vs-Buy Decisions — Build-vs-buy is usually decided before anyone runs the analysis. An engineering-led organisation builds; a lean…"
+---
+
 # 06 · AI Procurement & Build-vs-Buy Decisions
 
 Build-vs-buy is usually decided before anyone runs the analysis. An

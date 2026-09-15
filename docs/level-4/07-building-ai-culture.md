@@ -1,3 +1,7 @@
+---
+description: "Building AI Culture — Every framework in this program — governance checklists, portfolio scoring, incident runbooks — only works if the organization's…"
+---
+
 # 07 · Building AI Culture
 
 Every framework in this program — governance checklists, portfolio

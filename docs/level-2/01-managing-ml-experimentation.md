@@ -1,3 +1,7 @@
+---
+description: "Managing ML Experimentation & Iteration — Most of what an ML team does day to day is not 'building the model' — it is running experiments to find out…"
+---
+
 # 01 · Managing ML Experimentation & Iteration
 
 Most of what an ML team does day to day is not "building the model" — it is

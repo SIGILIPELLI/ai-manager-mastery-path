@@ -1,3 +1,7 @@
+---
+description: "Project — An AI Governance Framework for an Organization — This project pulls together Modules 1-9 into one deliverable: a complete AI governance…"
+---
+
 # 10 · Project — An AI Governance Framework for an Organization
 
 This project pulls together Modules 1-9 into one deliverable: a complete AI

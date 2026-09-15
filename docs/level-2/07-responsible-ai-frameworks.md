@@ -1,3 +1,7 @@
+---
+description: "Responsible AI Frameworks — Almost every organisation now has AI principles. Fairness, transparency, accountability, human oversight — the lists are…"
+---
+
 # 07 · Responsible AI Frameworks
 
 Almost every organisation now has AI principles. Fairness, transparency,

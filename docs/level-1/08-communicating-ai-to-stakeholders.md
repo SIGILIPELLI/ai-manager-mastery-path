@@ -1,3 +1,7 @@
+---
+description: "Communicating AI Concepts to Non-Technical Stakeholders — An AI manager spends a large share of their time translating — turning 'we improved the F1 score…"
+---
+
 # 08 · Communicating AI Concepts to Non-Technical Stakeholders
 
 An AI manager spends a large share of their time translating — turning

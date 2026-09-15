@@ -1,3 +1,7 @@
+---
+description: "Org Design for AI-First Companies — There is no single 'correct' org chart for an AI-first company — the right structure depends on whether AI is your…"
+---
+
 # 02 · Org Design for AI-First Companies
 
 There is no single "correct" org chart for an AI-first company — the right

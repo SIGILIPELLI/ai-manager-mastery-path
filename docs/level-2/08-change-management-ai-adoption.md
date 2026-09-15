@@ -1,3 +1,7 @@
+---
+description: "Change Management for AI Adoption — The most expensive AI failure is not a model that doesn't work. It is a model that works, ships, and is quietly…"
+---
+
 # 08 · Change Management for AI Adoption
 
 The most expensive AI failure is not a model that doesn't work. It is a

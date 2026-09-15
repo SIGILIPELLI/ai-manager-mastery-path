@@ -1,3 +1,7 @@
+---
+description: "AI Talent Strategy — AI talent is expensive, scarce, and unusually mobile — a strong ML engineer gets recruiter messages weekly, and the skills that make…"
+---
+
 # 04 · AI Talent Strategy
 
 AI talent is expensive, scarce, and unusually mobile — a strong ML engineer

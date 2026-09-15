@@ -1,3 +1,7 @@
+---
+description: "AI ROI Measurement — 'What's the ROI of AI?' is a question you will be asked by finance, by the board, and by your own VP, usually before you have clean…"
+---
+
 # 07 · AI ROI Measurement
 
 "What's the ROI of AI?" is a question you will be asked by finance, by the

@@ -1,3 +1,7 @@
+---
+description: "AI Regulation & Policy at Scale — Level 3's governance module covered building a compliance process for a single organization's systems. At the executive…"
+---
+
 # 05 · AI Regulation & Policy at Scale
 
 Level 3's governance module covered building a compliance process for a

@@ -1,3 +1,7 @@
+---
+description: "Executive AI Strategy — At the executive level, 'AI strategy' stops being a set of project choices and becomes a capital-allocation and…"
+---
+
 # 01 · Executive AI Strategy
 
 At the executive level, "AI strategy" stops being a set of project choices

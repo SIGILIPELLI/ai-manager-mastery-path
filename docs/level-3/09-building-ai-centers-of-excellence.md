@@ -1,3 +1,7 @@
+---
+description: "Building AI Centers of Excellence — An AI Center of Excellence (CoE) is one of the most commonly mis-built structures in AI organizations — often stood up…"
+---
+
 # 09 · Building AI Centers of Excellence
 
 An AI Center of Excellence (CoE) is one of the most commonly mis-built

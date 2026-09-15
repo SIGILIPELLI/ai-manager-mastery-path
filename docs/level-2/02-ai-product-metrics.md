@@ -1,3 +1,7 @@
+---
+description: "AI Product Metrics — An AI project can be a technical success and a business failure at the same time, and the usual reason is that nobody built the…"
+---
+
 # 02 · AI Product Metrics
 
 An AI project can be a technical success and a business failure at the same

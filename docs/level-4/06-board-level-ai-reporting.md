@@ -1,3 +1,7 @@
+---
+description: "Board-Level AI Reporting — A board has limited time, limited technical depth, and fiduciary responsibility for risks they can't personally evaluate in…"
+---
+
 # 06 · Board-Level AI Reporting
 
 A board has limited time, limited technical depth, and fiduciary

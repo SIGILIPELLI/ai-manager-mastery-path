@@ -1,3 +1,7 @@
+---
+description: "AI Ethics & Responsible AI Basics — AI ethics is frequently treated as an academic afterthought or a legal checkbox, bolted onto a project after the model…"
+---
+
 # 05 · AI Ethics & Responsible AI Basics
 
 AI ethics is frequently treated as an academic afterthought or a legal

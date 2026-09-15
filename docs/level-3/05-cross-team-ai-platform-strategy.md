@@ -1,3 +1,7 @@
+---
+description: "Cross-Team AI Platform Strategy — Once an organization has more than one AI team, someone eventually asks: 'should we build a shared platform?' The honest…"
+---
+
 # 05 · Cross-Team AI Platform Strategy
 
 Once an organization has more than one AI team, someone eventually asks:

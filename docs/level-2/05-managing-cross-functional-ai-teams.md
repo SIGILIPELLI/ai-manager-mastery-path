@@ -1,3 +1,7 @@
+---
+description: "Managing Cross-Functional AI Teams — An AI initiative of any consequence needs at least five functions: data science, engineering, product, legal or…"
+---
+
 # 05 · Managing Cross-Functional AI Teams
 
 An AI initiative of any consequence needs at least five functions: data

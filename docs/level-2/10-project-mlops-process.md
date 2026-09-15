@@ -1,3 +1,7 @@
+---
+description: "Project — Design an MLOps Process for a Team — Every module in this level described one part of running AI systems in production. This capstone makes you…"
+---
+
 # 10 · Project — Design an MLOps Process for a Team
 
 Every module in this level described one part of running AI systems in

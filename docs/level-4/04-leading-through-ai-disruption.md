@@ -1,3 +1,7 @@
+---
+description: "Leading Through AI Disruption — AI disruption inside your own organization is not a hypothetical future event you plan for once — it's an ongoing…"
+---
+
 # 04 · Leading Through AI Disruption
 
 AI disruption inside your own organization is not a hypothetical future

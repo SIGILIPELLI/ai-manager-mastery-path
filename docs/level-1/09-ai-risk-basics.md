@@ -1,3 +1,7 @@
+---
+description: "AI Risk Basics — Every AI system carries a specific set of risks that don't apply to traditional software in the same way — and, importantly, these risks…"
+---
+
 # 09 · AI Risk Basics
 
 Every AI system carries a specific set of risks that don't apply to

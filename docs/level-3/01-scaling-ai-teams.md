@@ -1,3 +1,7 @@
+---
+description: "Scaling AI Teams — The management problems of a five-person ML team and a fifty-person AI organization are not the same problems at a larger size — they…"
+---
+
 # 01 · Scaling AI Teams
 
 The management problems of a five-person ML team and a fifty-person AI

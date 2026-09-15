@@ -1,3 +1,7 @@
+---
+description: "AI Portfolio Management — Once an organization runs more than a handful of AI initiatives, the executive question shifts from 'is this project good' to…"
+---
+
 # 03 · AI Portfolio Management
 
 Once an organization runs more than a handful of AI initiatives, the

@@ -1,3 +1,7 @@
+---
+description: "Managing AI Incidents & Model Failures — AI systems fail differently from traditional software, and your incident process needs to account for that or it…"
+---
+
 # 06 · Managing AI Incidents & Model Failures
 
 AI systems fail differently from traditional software, and your incident

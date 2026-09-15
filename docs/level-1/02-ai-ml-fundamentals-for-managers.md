@@ -1,3 +1,7 @@
+---
+description: "AI/ML Fundamentals for Managers — You don't need to write a line of Python to manage AI work well, but you do need enough of a mental model to ask sharp…"
+---
+
 # 02 · AI/ML Fundamentals for Managers
 
 You don't need to write a line of Python to manage AI work well, but you do

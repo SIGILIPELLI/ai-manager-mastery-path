@@ -1,3 +1,7 @@
+---
+description: "What Is AI Management? — 'AI management' is a fast-forming discipline sitting at the intersection of product management, engineering management, and data…"
+---
+
 # 01 · What Is AI Management?
 
 "AI management" is a fast-forming discipline sitting at the intersection of

@@ -1,3 +1,7 @@
+---
+description: "Managing LLM/GenAI Initiatives — Classical ML projects fail in fairly predictable ways: bad data, wrong metric, model doesn't generalize. LLM and…"
+---
+
 # 03 · Managing LLM/GenAI Initiatives
 
 Classical ML projects fail in fairly predictable ways: bad data, wrong

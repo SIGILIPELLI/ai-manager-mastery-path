@@ -1,3 +1,7 @@
+---
+description: "MLOps Fundamentals for Managers — There is a gap between 'the model works' and 'the model works every Tuesday at 3am, on data nobody warned us about, and…"
+---
+
 # 03 · MLOps Fundamentals for Managers
 
 There is a gap between "the model works" and "the model works every Tuesday

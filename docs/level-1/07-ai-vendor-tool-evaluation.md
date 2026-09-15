@@ -1,3 +1,7 @@
+---
+description: "AI Vendor & Tool Evaluation Basics — Very few AI managers build every capability in-house — most decisions involve evaluating an LLM API provider, an ML…"
+---
+
 # 07 · AI Vendor & Tool Evaluation Basics
 
 Very few AI managers build every capability in-house — most decisions

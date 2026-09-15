@@ -1,3 +1,7 @@
+---
+description: "M&A and AI Capability Integration — Acquiring a company for its AI capability — a team, a model, a data asset — carries diligence and integration risks…"
+---
+
 # 08 · M&A and AI Capability Integration
 
 Acquiring a company for its AI capability — a team, a model, a data asset

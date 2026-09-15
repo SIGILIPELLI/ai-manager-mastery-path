@@ -1,3 +1,7 @@
+---
+description: "Career Growth: AI Manager to Chief AI Officer — The path from managing an AI team to holding an executive AI mandate isn't a simple seniority ladder — it…"
+---
+
 # 09 · Career Growth: AI Manager to Chief AI Officer
 
 The path from managing an AI team to holding an executive AI mandate isn't

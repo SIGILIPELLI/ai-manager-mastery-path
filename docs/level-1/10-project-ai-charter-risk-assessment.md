@@ -1,3 +1,7 @@
+---
+description: "Project — AI Project Charter & Risk Assessment — This capstone pulls together every module in Level 1 into the single document an AI manager should…"
+---
+
 # 10 · Project — AI Project Charter & Risk Assessment
 
 This capstone pulls together every module in Level 1 into the single

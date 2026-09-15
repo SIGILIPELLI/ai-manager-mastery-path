@@ -1,3 +1,7 @@
+---
+description: "AI Governance & Compliance — Governance is not a document your legal team writes and your engineers ignore. Done well, it's the set of checkpoints that…"
+---
+
 # 02 · AI Governance & Compliance
 
 Governance is not a document your legal team writes and your engineers
