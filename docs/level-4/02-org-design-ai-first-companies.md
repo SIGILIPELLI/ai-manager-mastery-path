@@ -133,6 +133,12 @@ agrees AI-driven products matter: the org chart, not the strategy
 document, is what actually determines whose priorities win a resource
 conflict.
 
+## 🔀 Related lessons on other tracks
+
+- [Product Lead — 08 · Basic Org Design for Product Teams](https://sigilipelli.github.io/product-lead-mastery-path/level-1/08-basic-org-design/)
+- [Product Manager — 10 · Capstone — Full Product Strategy + Org Design](https://sigilipelli.github.io/product-manager-mastery-path/level-4/10-capstone-strategy-org-design/)
+- [Servant Leadership — 10 · Capstone — Design an Org-Wide Leadership Development Program](https://sigilipelli.github.io/servant-leadership-mastery-path/level-4/10-capstone-leadership-development-program/)
+
 ## Exercise
 
 Take your own organization (or Palisade Mutual, pre-reorg).

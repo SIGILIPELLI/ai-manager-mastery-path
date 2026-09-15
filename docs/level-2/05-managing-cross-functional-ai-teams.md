@@ -213,6 +213,11 @@ experiment review from week one closes the gap mechanically — it puts a
 person who understands the serving-time data availability in the room
 before, not after, the model commits to features that path can't supply.
 
+## 🔀 Related lessons on other tracks
+
+- [Data Science — 07 · Cross-Functional Stakeholder Management](https://sigilipelli.github.io/data-science-mastery-path/level-4/07-stakeholder-management/)
+- [Product Lead — Cross-Functional Leadership](https://sigilipelli.github.io/product-lead-mastery-path/level-2/04-cross-functional-leadership/)
+
 ## Exercise
 
 Take a current cross-functional AI initiative, or design one for a

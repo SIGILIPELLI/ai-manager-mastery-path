@@ -141,6 +141,10 @@ depended on speed as much as generosity: every week of continued
 uncertainty was actively degrading the exact talent pool the eventual
 redeployment plan needed to succeed.
 
+## 🔀 Related lessons on other tracks
+
+- [Servant Leadership — 07 · Leading Through Change](https://sigilipelli.github.io/servant-leadership-mastery-path/level-2/07-leading-through-change/)
+
 ## Exercise
 
 Take a real or plausible AI-driven disruption at your organization (or

@@ -144,6 +144,12 @@ reaches a board, the same way there's no substitute for actually running an
 experiment to learn whether an approach works, covered all the way back at
 the start of this program.
 
+## 🔀 Related lessons on other tracks
+
+- [Agile — 09 · Career Growth: Scrum Master to Agile Coach/Director](https://sigilipelli.github.io/agile-mastery-path/level-4/09-career-growth-scrum-master-to-coach/)
+- [AI Tools — 09 · Career Growth: AI Tools Strategist/Consultant](https://sigilipelli.github.io/ai-tools-mastery-path/level-4/09-career-growth-ai-tools-strategist/)
+- [Automotive Testing — 09 · Career Growth in Automotive Test Engineering](https://sigilipelli.github.io/automotive-testing-mastery-path/level-4/09-career-growth/)
+
 ## Exercise
 
 Take your own current level in this progression (or Priya's position, at

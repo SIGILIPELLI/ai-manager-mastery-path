@@ -255,6 +255,10 @@ edge cases some of the time — which is why tracking the waiver count and
 its reasons is itself a monitoring signal on the governance process, not
 just an administrative log.
 
+## 🔀 Related lessons on other tracks
+
+- [Workday — 10 · Project — Design a Simple Org Structure & Hire Business Process](https://sigilipelli.github.io/workday-mastery-path/level-1/10-project-org-structure-hire-bp/)
+
 ## Exercise
 
 Produce the four-page process document for a team you run, work

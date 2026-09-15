@@ -132,6 +132,12 @@ pinning alone only delays the exposure; the eval suite is what lets you
 decide, on your own evidence, when the new version is actually safe to
 adopt.
 
+## 🔀 Related lessons on other tracks
+
+- [Agile — 08 · Agile Contracts & Vendor Management](https://sigilipelli.github.io/agile-mastery-path/level-3/08-agile-contracts-vendor-management/)
+- [AI Tools — 03 · Advanced Vendor Risk Management for AI Tools](https://sigilipelli.github.io/ai-tools-mastery-path/level-4/03-advanced-vendor-risk-management/)
+- [Project Manager — 04 · Vendor & Contract Management](https://sigilipelli.github.io/project-manager-mastery-path/level-3/04-vendor-contract-management/)
+
 ## Exercise
 
 Take a real or plausible AI vendor relationship at your organization.

@@ -142,6 +142,10 @@ reintroduces the original duplication problem in a form the platform team
 can no longer see or measure — an explicit, documented opt-out keeps the
 duplication visible and countable, even when it can't be eliminated.
 
+## 🔀 Related lessons on other tracks
+
+- [Playwright — 01 · Cross-Browser & Device Strategy](https://sigilipelli.github.io/playwright-mastery-path/level-4/01-cross-browser-strategy/)
+
 ## Exercise
 
 Take your own multi-team AI org (or Ashgrove Financial, above, at month 17).

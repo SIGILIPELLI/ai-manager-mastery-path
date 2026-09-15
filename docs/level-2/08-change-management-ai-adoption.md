@@ -221,6 +221,12 @@ mechanism producing the resistance; only changing the rubric itself removes
 the conflict, which is exactly why it had to happen first, before any other
 intervention could have a chance of working.
 
+## 🔀 Related lessons on other tracks
+
+- [Claude Training — 02 · Change Management for AI Adoption](https://sigilipelli.github.io/claude-training-mastery-path/level-4/02-change-management-ai-adoption/)
+- [Agile — 01 · Agile Transformation & Change Management](https://sigilipelli.github.io/agile-mastery-path/level-4/01-agile-transformation-change-management/)
+- [AI Tools — 06 · Change Management for AI Tool Rollouts](https://sigilipelli.github.io/ai-tools-mastery-path/level-3/06-change-management-rollouts/)
+
 ## Exercise
 
 Take an AI system your organisation has deployed, or is about to.

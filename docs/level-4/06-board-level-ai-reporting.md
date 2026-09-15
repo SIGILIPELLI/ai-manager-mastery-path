@@ -138,6 +138,10 @@ produce vague outputs — the improvement in question quality is a direct,
 traceable consequence of the improvement in the information architecture
 feeding the board, not a separate outcome that happened to occur alongside it.
 
+## 🔀 Related lessons on other tracks
+
+- [Product Manager — 05 · Executive Communication & Board Reporting](https://sigilipelli.github.io/product-manager-mastery-path/level-4/05-executive-communication-board-reporting/)
+
 ## Exercise
 
 Take your own organization's board AI reporting (or Ashford Freight, at the

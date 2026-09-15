@@ -149,6 +149,10 @@ any actual leverage is what the next dollar buys, which is exactly the
 reframing that let the COO agree once it was made explicit rather than
 implicit.
 
+## 🔀 Related lessons on other tracks
+
+- [Project Manager — 02 · Portfolio Management Basics](https://sigilipelli.github.io/project-manager-mastery-path/level-3/02-portfolio-management-basics/)
+
 ## Exercise
 
 Take your own AI portfolio (or Cordova Air's six-project portfolio, above,

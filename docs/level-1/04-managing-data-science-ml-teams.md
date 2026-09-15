@@ -121,6 +121,10 @@ you nothing true, while a rigorous experiment that disproves the hypothesis
 has still generated real information — the first is a false positive
 disguised as output, the second is the process working as intended.
 
+## 🔀 Related lessons on other tracks
+
+- [Data Science — 01 · What Is Data Science?](https://sigilipelli.github.io/data-science-mastery-path/level-1/01-what-is-data-science/)
+
 ## Exercise
 
 Map your current (or a plausible) AI/ML team against the five roles in
