@@ -1,0 +1,2908 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Data Governance Basics — Data governance has an image problem. To most engineering teams it sounds like a committee that slows things down, and to most…">
+      
+      
+      
+        <link rel="canonical" href="https://sigilipelli.github.io/ai-manager-mastery-path/level-2/04-data-governance-basics/">
+      
+      
+        <link rel="prev" href="../03-mlops-fundamentals-for-managers/">
+      
+      
+        <link rel="next" href="../05-managing-cross-functional-ai-teams/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>04 · Data Governance Basics - AI Manager Mastery Path</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/progress-tracker.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Manager Mastery Path">
+  <meta property="og:title" content="04 · Data Governance Basics">
+  <meta property="og:description" content="Data Governance Basics — Data governance has an image problem. To most engineering teams it sounds like a committee that slows things down, and to most…">
+  <meta property="og:url" content="https://sigilipelli.github.io/ai-manager-mastery-path/level-2/04-data-governance-basics/">
+  <meta property="og:image" content="https://sigilipelli.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="04 · Data Governance Basics">
+  <meta name="twitter:description" content="Data Governance Basics — Data governance has an image problem. To most engineering teams it sounds like a committee that slows things down, and to most…">
+  <meta name="twitter:image" content="https://sigilipelli.github.io/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9440969811959397",
+      enable_page_level_ads: true
+    });
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "AI Manager Mastery Path",
+    "description": "A structured, module-wise AI management training program from entry level to master level — free, with real frameworks and templates in every module.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Mastery Path",
+      "sameAs": "https://sigilipelli.github.io/"
+    },
+    "isAccessibleForFree": true,
+    "url": "https://sigilipelli.github.io/ai-manager-mastery-path/level-2/04-data-governance-basics/"
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "04 \u00b7 Data Governance Basics",
+    "description": "Data Governance Basics \u2014 Data governance has an image problem. To most engineering teams it sounds like a committee that slows things down, and to most\u2026",
+    "url": "https://sigilipelli.github.io/ai-manager-mastery-path/level-2/04-data-governance-basics/",
+    "isPartOf": {
+      "@type": "Course",
+      "name": "AI Manager Mastery Path",
+      "url": "https://sigilipelli.github.io/ai-manager-mastery-path/"
+    },
+    "isAccessibleForFree": true,
+    "learningResourceType": "Lesson",
+    "inLanguage": "en"
+  }
+  </script>
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#04-data-governance-basics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Manager Mastery Path" class="md-header__button md-logo" aria-label="AI Manager Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Manager Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              04 · Data Governance Basics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SIGILIPELLI/ai-manager-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ai-manager-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../privacy/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Privacy Policy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../license/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  License
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Entry
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Intermediate
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Advanced
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Master
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Manager Mastery Path" class="md-nav__button md-logo" aria-label="AI Manager Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    AI Manager Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SIGILIPELLI/ai-manager-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ai-manager-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Entry
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Entry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/01-what-is-ai-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What Is AI Management?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/02-ai-ml-fundamentals-for-managers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · AI/ML Fundamentals for Managers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/03-ai-project-lifecycles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Understanding AI Project Lifecycles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/04-managing-data-science-ml-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Managing Data Science & ML Teams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/05-ai-ethics-responsible-ai-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · AI Ethics & Responsible AI Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/06-setting-ai-project-expectations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Setting AI Project Expectations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/07-ai-vendor-tool-evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · AI Vendor & Tool Evaluation Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/08-communicating-ai-to-stakeholders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Communicating AI Concepts to Non-Technical Stakeholders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/09-ai-risk-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · AI Risk Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-1/10-project-ai-charter-risk-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — AI Project Charter & Risk Assessment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Intermediate
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Intermediate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-managing-ml-experimentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Managing ML Experimentation & Iteration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-ai-product-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · AI Product Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-mlops-fundamentals-for-managers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · MLOps Fundamentals for Managers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Data Governance Basics
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Data Governance Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-the-five-questions-governance-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. The five questions governance answers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ownership-the-two-role-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ownership: the two-role model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-access-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Access tiers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-data-quality-as-an-sla-not-an-aspiration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Data quality as an SLA, not an aspiration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-lineage-and-why-you-should-care" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Lineage — and why you should care
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-governance-specific-to-ai-training-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Governance specific to AI training data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-lessons-on-other-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔀 Related lessons on other tracks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-managing-cross-functional-ai-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Managing Cross-Functional AI Teams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-ai-procurement-build-vs-buy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · AI Procurement & Build-vs-Buy Decisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-responsible-ai-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Responsible AI Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-change-management-ai-adoption/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Change Management for AI Adoption
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-budgeting-for-ai-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Budgeting for AI Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-project-mlops-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Design an MLOps Process for a Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Advanced
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/01-scaling-ai-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Scaling AI Teams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/02-ai-governance-compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · AI Governance & Compliance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/03-managing-llm-genai-initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Managing LLM/GenAI Initiatives
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/04-ai-talent-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · AI Talent Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/05-cross-team-ai-platform-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Cross-Team AI Platform Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/06-managing-ai-incidents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Managing AI Incidents & Model Failures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/07-ai-roi-measurement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · AI ROI Measurement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/08-vendor-partner-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Vendor & Partner Management for AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/09-building-ai-centers-of-excellence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Building AI Centers of Excellence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-3/10-project-ai-governance-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — An AI Governance Framework for an Organization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Master
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Master
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/01-executive-ai-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Executive AI Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/02-org-design-ai-first-companies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Org Design for AI-First Companies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/03-ai-portfolio-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · AI Portfolio Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/04-leading-through-ai-disruption/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Leading Through AI Disruption
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/05-ai-regulation-policy-at-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · AI Regulation & Policy at Scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/06-board-level-ai-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Board-Level AI Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/07-building-ai-culture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Building AI Culture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/08-ma-ai-capability-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · M&A and AI Capability Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/09-career-growth-ai-manager-to-caio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Career Growth: AI Manager to Chief AI Officer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level-4/10-capstone-ai-strategy-governance-org-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — Full AI Strategy, Governance & Org Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-the-five-questions-governance-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. The five questions governance answers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ownership-the-two-role-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ownership: the two-role model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-access-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Access tiers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-data-quality-as-an-sla-not-an-aspiration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Data quality as an SLA, not an aspiration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-lineage-and-why-you-should-care" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Lineage — and why you should care
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-governance-specific-to-ai-training-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Governance specific to AI training data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-lessons-on-other-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔀 Related lessons on other tracks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="04-data-governance-basics">04 · Data Governance Basics<a class="headerlink" href="#04-data-governance-basics" title="Permanent link">&para;</a></h1>
+<p>Data governance has an image problem. To most engineering teams it sounds
+like a committee that slows things down, and to most managers it sounds
+like something legal handles. Both readings are wrong in the same way: they
+treat governance as paperwork rather than as <strong>a set of pre-made decisions
+about who may do what with which data</strong>.</p>
+<p>Made in advance, those decisions cost a few hours and unblock a team. Made
+during an incident — a regulator's question, a customer deletion request, a
+model trained on data it shouldn't have touched — they cost weeks and are
+made badly under pressure.</p>
+<p>For AI work specifically, governance stops being optional the moment data
+gets <em>copied into a model</em>. A row in a database can be deleted. A pattern
+learned from that row is much harder to remove, and "we'll just retrain"
+turns out to mean six weeks and a re-validation cycle.</p>
+<h2 id="1-the-five-questions-governance-answers">1. The five questions governance answers<a class="headerlink" href="#1-the-five-questions-governance-answers" title="Permanent link">&para;</a></h2>
+<p>If your organisation can answer these five for a given dataset, it has
+governance, whatever it calls the process. If it can't, it has a policy
+document.</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Concretely</th>
+<th>Symptom when unanswered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Who owns it?</strong></td>
+<td>A named person who can approve access and is accountable for quality</td>
+<td>Requests bounce between teams for weeks</td>
+</tr>
+<tr>
+<td><strong>Who may use it, for what?</strong></td>
+<td>Documented purposes; a route to request new ones</td>
+<td>Everyone gets everything, or nobody gets anything</td>
+</tr>
+<tr>
+<td><strong>Where did it come from?</strong></td>
+<td>Source system, collection basis, transformations applied</td>
+<td>Nobody can explain a number to an auditor</td>
+</tr>
+<tr>
+<td><strong>How good is it?</strong></td>
+<td>Agreed thresholds for completeness, freshness, accuracy</td>
+<td>Silent model degradation</td>
+</tr>
+<tr>
+<td><strong>How long may we keep it?</strong></td>
+<td>Retention period and deletion mechanism per category</td>
+<td>Data hoarding, and deletion requests that can't be honoured</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>purpose</strong> question is the one AI work breaks most often. Data
+collected to deliver a service is not automatically data you may train a
+model on — that is a different purpose, and in several jurisdictions it
+requires a different legal basis. This is not a technicality; it is the
+most common reason a finished model cannot ship.</p>
+<h2 id="2-ownership-the-two-role-model">2. Ownership: the two-role model<a class="headerlink" href="#2-ownership-the-two-role-model" title="Permanent link">&para;</a></h2>
+<p>Governance fails when "the data team owns the data." They own the pipes,
+not the decisions. Split ownership into two roles per data domain
+(customer, transactions, support, HR) and name real people.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Who it is</th>
+<th>Decides</th>
+<th>Does not decide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data owner</strong></td>
+<td>A business leader in the domain — e.g. VP Customer Support owns ticket data</td>
+<td>Who may access it, for what purposes, how long it's retained, acceptable quality bar</td>
+<td>Storage technology, pipeline design</td>
+</tr>
+<tr>
+<td><strong>Data steward</strong></td>
+<td>A hands-on person in or near that team</td>
+<td>Definitions, quality checks, documentation, day-to-day access provisioning</td>
+<td>Policy, purpose approval</td>
+</tr>
+</tbody>
+</table>
+<p>A one-page domain record is enough to start:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Example entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Domain</td>
+<td>Support tickets</td>
+</tr>
+<tr>
+<td>Data owner</td>
+<td>VP Customer Support (named)</td>
+</tr>
+<tr>
+<td>Steward</td>
+<td>Support Ops analyst (named)</td>
+</tr>
+<tr>
+<td>Contains personal data?</td>
+<td>Yes — names, emails, free-text describing accounts</td>
+</tr>
+<tr>
+<td>Special categories?</td>
+<td>Occasionally health references in free text — treat as sensitive</td>
+</tr>
+<tr>
+<td>Approved purposes</td>
+<td>Service delivery; internal analytics; <strong>ML training on redacted text only</strong></td>
+</tr>
+<tr>
+<td>Retention</td>
+<td>24 months, then delete; redacted derivatives 36 months</td>
+</tr>
+<tr>
+<td>Quality bar</td>
+<td>See section 4</td>
+</tr>
+<tr>
+<td>Last reviewed</td>
+<td>Quarterly, date recorded</td>
+</tr>
+</tbody>
+</table>
+<p>Ten of these covers most mid-sized organisations. Producing them is a
+two-week exercise, not a programme.</p>
+<h2 id="3-access-tiers">3. Access tiers<a class="headerlink" href="#3-access-tiers" title="Permanent link">&para;</a></h2>
+<p>Binary access — you have it or you don't — pushes teams toward asking for
+the maximum, because a second request is expensive. Tiers let people get
+what they need quickly and reserve real scrutiny for real risk.</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Data</th>
+<th>Typical approver</th>
+<th>Turnaround target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0 — Open</strong></td>
+<td>Aggregated, anonymised, published internally</td>
+<td>Self-serve</td>
+<td>Immediate</td>
+</tr>
+<tr>
+<td><strong>1 — Internal</strong></td>
+<td>Business data, no personal identifiers</td>
+<td>Steward</td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>2 — Restricted</strong></td>
+<td>Personal data, pseudonymised</td>
+<td>Data owner</td>
+<td>3 days</td>
+</tr>
+<tr>
+<td><strong>3 — Sensitive</strong></td>
+<td>Direct identifiers, special categories, financial detail</td>
+<td>Owner + privacy/legal</td>
+<td>10 days</td>
+</tr>
+</tbody>
+</table>
+<p>Two design rules matter more than the tier boundaries. <strong>Default to the
+lowest tier that answers the question</strong> — most ML training does not need
+direct identifiers, and a team that has never been asked will not
+volunteer that. And <strong>make tier 0 and 1 genuinely fast</strong>, or the tiering
+collapses back into "ask for everything at once."</p>
+<h2 id="4-data-quality-as-an-sla-not-an-aspiration">4. Data quality as an SLA, not an aspiration<a class="headerlink" href="#4-data-quality-as-an-sla-not-an-aspiration" title="Permanent link">&para;</a></h2>
+<p>"Improve data quality" is unmanageable. Quality thresholds per dataset,
+monitored, with a named owner, are manageable. Four dimensions cover the
+overwhelming majority of ML failures.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Definition</th>
+<th>Example threshold</th>
+<th>Who is paged</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Completeness</strong></td>
+<td>Share of records with all required fields</td>
+<td>≥98% of tickets have a category</td>
+<td>Steward</td>
+</tr>
+<tr>
+<td><strong>Freshness</strong></td>
+<td>Age of the newest record when the pipeline runs</td>
+<td>Under 6 hours</td>
+<td>Data engineering</td>
+</tr>
+<tr>
+<td><strong>Validity</strong></td>
+<td>Share of values conforming to the expected type/range</td>
+<td>≥99.5% pass schema checks</td>
+<td>Data engineering</td>
+</tr>
+<tr>
+<td><strong>Consistency</strong></td>
+<td>Agreement between systems that should match</td>
+<td>Account counts within 0.5% of billing</td>
+<td>Steward + owner</td>
+</tr>
+</tbody>
+</table>
+<p>The manager's contribution here is not setting the numbers — it is
+insisting that the thresholds exist, are monitored automatically, and have
+a named recipient for the alert. An unmonitored threshold is a wish.</p>
+<h2 id="5-lineage-and-why-you-should-care">5. Lineage — and why you should care<a class="headerlink" href="#5-lineage-and-why-you-should-care" title="Permanent link">&para;</a></h2>
+<p>Lineage is the record of where a number came from: source system, every
+transformation, every dataset it fed. It sounds like an engineering nicety
+until one of these three moments arrives.</p>
+<table>
+<thead>
+<tr>
+<th>Moment</th>
+<th>Question you will be asked</th>
+<th>Without lineage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Audit or regulator inquiry</td>
+<td>"What data informed this decision?"</td>
+<td>Weeks of archaeology, uncertain answer</td>
+</tr>
+<tr>
+<td>Data incident</td>
+<td>"Which models used the corrupted table?"</td>
+<td>Retrain everything, or hope</td>
+</tr>
+<tr>
+<td>Deletion request</td>
+<td>"Prove this person's data is gone"</td>
+<td>You cannot</td>
+</tr>
+</tbody>
+</table>
+<p>You don't need a lineage platform to start. You need the ML team to record,
+for every model that reaches production, the datasets and versions it was
+trained on. That single habit answers most of the second row and much of
+the first.</p>
+<h2 id="6-governance-specific-to-ai-training-data">6. Governance specific to AI training data<a class="headerlink" href="#6-governance-specific-to-ai-training-data" title="Permanent link">&para;</a></h2>
+<p>Four issues that ordinary data governance misses because it predates
+model training.</p>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>The question</th>
+<th>A workable default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Purpose creep</strong></td>
+<td>Was this data collected for a use compatible with training?</td>
+<td>Explicit "ML training" purpose flag per domain; absent = not approved</td>
+</tr>
+<tr>
+<td><strong>Deletion propagation</strong></td>
+<td>A customer asks for erasure — what happens to models trained on their data?</td>
+<td>Delete from stores; document that models are retrained on a defined cycle; record the cycle length</td>
+</tr>
+<tr>
+<td><strong>Third-party &amp; synthetic data</strong></td>
+<td>May we use scraped, licensed, or vendor-supplied data commercially?</td>
+<td>Licence review before ingestion, not before launch</td>
+</tr>
+<tr>
+<td><strong>Vendor data flows</strong></td>
+<td>Does data sent to an external model provider get retained or trained on?</td>
+<td>Contractual no-training / zero-retention terms, verified in writing</td>
+</tr>
+</tbody>
+</table>
+<p>The deletion-propagation row is where good-faith organisations get caught.
+"We delete the row" is usually a defensible answer <em>if</em> you can also state
+the retraining cycle. It becomes indefensible when nobody has ever thought
+about it and the honest answer is "the model still contains it, forever."</p>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A 400-person healthtech company built a triage model to prioritise inbound
+patient messages. Six months of ML work, strong offline results, executive
+enthusiasm. Launch was scheduled for a Monday. It slipped by seven months.</p>
+<p>The privacy review, run late because governance was treated as a
+pre-launch checkbox, produced three findings:</p>
+<ol>
+<li><strong>Purpose.</strong> The message data had been collected under a consent notice
+   covering "providing and improving our services." Counsel judged model
+   training arguably covered, but the free-text field routinely contained
+   clinical detail — a special category requiring an explicit basis the
+   company did not have.</li>
+<li><strong>Retention.</strong> Messages were retained indefinitely because no one had
+   ever set a period. The training set included messages from patients who
+   had closed their accounts three years earlier.</li>
+<li><strong>Lineage.</strong> Asked which training records came from which source system,
+   the team could not answer. The dataset had been assembled by a departed
+   contractor from a joined export.</li>
+</ol>
+<p>Finding 3 was the expensive one. Without lineage, the company could not
+selectively remove the affected records — it could not even identify them.
+The training set had to be rebuilt from source under a corrected process,
+and the model retrained and re-validated.</p>
+<table>
+<thead>
+<tr>
+<th>Cost of the seven-month delay</th>
+<th>Estimate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rebuild dataset + retrain + re-validate</td>
+<td>~$180,000 (2.5 FTE, 5 months)</td>
+</tr>
+<tr>
+<td>Legal and external privacy counsel</td>
+<td>~$60,000</td>
+</tr>
+<tr>
+<td>Deferred benefit (triage savings, 7 months)</td>
+<td>~$310,000</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>~$550,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The governance work that would have prevented all three findings was
+scoped afterwards at roughly <strong>six weeks of one steward's time plus two
+half-day workshops</strong> — call it $25,000. It produced: domain records for
+four datasets, a retention schedule, an ML-training purpose flag, and a
+rule that training datasets record their source tables.</p>
+<p>The pattern is worth naming because it repeats everywhere: <strong>governance
+was not skipped, it was deferred</strong> — and deferred governance is discovered
+at the least reversible moment, when the model already exists. The
+manager's actionable lesson is a sequencing one. The privacy and purpose
+review belongs at the point the dataset is assembled, not at the point the
+model is ready. It costs almost nothing at the start and it is the single
+highest-leverage schedule change available to you.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>The reason "delete the row" doesn't erase a customer's data from a deployed
+model is a direct consequence of how training works mathematically: a
+model's parameters are the accumulated result of many small gradient
+updates, each nudged by every training example it has ever seen, and those
+nudges are summed and blended into weights that no longer preserve any
+addressable link back to a specific row. There is no operation equivalent
+to "find and delete this customer's contribution" the way there is for a
+database record, because the information isn't stored in per-record form —
+it's diffused across potentially millions of parameters in a way that isn't
+attributable or reversible after the fact. The only mechanism that
+genuinely removes a record's influence is retraining from a corrected
+dataset that no longer contains it, which is exactly why "document the
+retraining cycle" is the honest, workable default rather than "we deleted
+it" — the deletion is real at the source, and the model's exposure closes
+only on the next retrain.</p>
+<p>Lineage's importance follows the same logic in reverse: if you can't trace
+which source rows fed a given training set, you can't even identify which
+records need to be removed on the next retrain, let alone verify that a
+past training run didn't touch data it shouldn't have. This is why the
+healthtech example's finding 3 (no lineage) was the expensive one rather
+than finding 1 or 2 — a missing purpose basis or an overlong retention
+period are each fixable by a policy change going forward, but a training
+set assembled from an untraceable joined export means the company had no
+way to <em>scope the correction</em> at all; every downstream question ("which
+records must we remove," "did we train on the closed accounts," "is this
+model clean now") was unanswerable not because the answer was bad, but
+because the record needed to compute the answer didn't exist.</p>
+<h2 id="related-lessons-on-other-tracks">🔀 Related lessons on other tracks<a class="headerlink" href="#related-lessons-on-other-tracks" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://sigilipelli.github.io/ai-tools-mastery-path/level-3/07-data-governance/">AI Tools — 07 · Data Governance for AI Tool Usage</a></li>
+<li><a href="https://sigilipelli.github.io/data-engineering-mastery-path/level-3/05-data-governance-cataloging/">Data Engineering — 05 · Data Governance &amp; Cataloging</a></li>
+<li><a href="https://sigilipelli.github.io/excel-mastery-path/level-4/08-data-governance-spreadsheet-organizations/">Excel — 08 · Data Governance in Spreadsheet-Heavy Organizations</a></li>
+</ul>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Choose one dataset your team uses, or plans to use, for an AI project.</p>
+<ol>
+<li><strong>Fill in the domain record</strong> from section 2. Every blank you cannot
+   fill without asking someone is a governance gap; list who you'd have to
+   ask.</li>
+<li><strong>Name the owner and steward</strong> — actual people, not teams. If you cannot
+   name an owner, that is the first thing to fix, and it is a
+   fifteen-minute conversation, not a programme.</li>
+<li><strong>Answer the purpose question explicitly.</strong> Under what basis was this
+   data collected, and does that basis cover model training? Write the
+   answer down and get one person outside your team to agree with it.</li>
+<li><strong>Set four quality thresholds</strong> using section 4, and for each name who
+   receives the alert when it's breached.</li>
+<li><strong>Run the deletion test.</strong> Ask: if a customer requested erasure today,
+   what would happen to their data in our training sets and in models
+   already deployed? Write down the actual current answer, not the
+   aspirational one.</li>
+<li><strong>Pick the one gap</strong> from the above with the worst
+   consequence-times-likelihood, and put a specific fix on next month's
+   plan with a named owner.</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../03-mlops-fundamentals-for-managers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 03 · MLOps Fundamentals for Managers">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                03 · MLOps Fundamentals for Managers
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../05-managing-cross-functional-ai-teams/" class="md-footer__link md-footer__link--next" aria-label="Next: 05 · Managing Cross-Functional AI Teams">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                05 · Managing Cross-Functional AI Teams
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../javascripts/progress-tracker.js"></script>
+      
+    
+  </body>
+</html>
