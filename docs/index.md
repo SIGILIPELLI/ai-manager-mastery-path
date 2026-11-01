@@ -73,7 +73,7 @@ without necessarily writing the models themselves.
 
 ## More from the Mastery Path series
 
-Free, structured, module-wise training across 97 other languages, platforms and disciplines — expand a category to browse:
+Free, structured, module-wise training across 98 other languages, platforms and disciplines — expand a category to browse:
 
 <div class="mastery-tracks">
 <details class="mastery-card">
@@ -165,13 +165,14 @@ Free, structured, module-wise training across 97 other languages, platforms and 
 </div>
 </details>
 <details class="mastery-card">
-<summary>Databases <span class="mastery-count">5</span></summary>
+<summary>Databases <span class="mastery-count">6</span></summary>
 <div class="mastery-grid">
   <a href="https://sigilipelli.github.io/postgresql-mastery-path/">🐘 PostgreSQL</a>
   <a href="https://sigilipelli.github.io/mongodb-mastery-path/">🍃 MongoDB</a>
   <a href="https://sigilipelli.github.io/redis-mastery-path/">🟥 Redis</a>
   <a href="https://sigilipelli.github.io/snowflake-mastery-path/">❄️ Snowflake</a>
   <a href="https://sigilipelli.github.io/databricks-mastery-path/">🧱 Databricks</a>
+  <a href="https://sigilipelli.github.io/python-mastery-path/vector-databases-mastery-path/">🧭 Vector Databases</a>
 </div>
 </details>
 <details class="mastery-card">
@@ -249,4 +250,3 @@ Free, structured, module-wise training across 97 other languages, platforms and 
 </div>
 </details>
 </div>
-
