@@ -143,7 +143,7 @@ redeployment plan needed to succeed.
 
 ## 🔀 Related lessons on other tracks
 
-- [Servant Leadership — 07 · Leading Through Change](https://sigilipelli.github.io/servant-leadership-mastery-path/level-2/07-leading-through-change/)
+- [Servant Leadership — 07 · Leading Through Change](https://learnmasterypath.com/servant-leadership-mastery-path/level-2/07-leading-through-change/)
 
 ## Exercise
 

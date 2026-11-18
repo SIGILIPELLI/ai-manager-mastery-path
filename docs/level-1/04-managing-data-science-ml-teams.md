@@ -123,7 +123,7 @@ disguised as output, the second is the process working as intended.
 
 ## 🔀 Related lessons on other tracks
 
-- [Data Science — 01 · What Is Data Science?](https://sigilipelli.github.io/data-science-mastery-path/level-1/01-what-is-data-science/)
+- [Data Science — 01 · What Is Data Science?](https://learnmasterypath.com/data-science-mastery-path/level-1/01-what-is-data-science/)
 
 ## Exercise
 

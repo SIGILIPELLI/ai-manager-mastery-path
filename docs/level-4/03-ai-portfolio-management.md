@@ -151,7 +151,7 @@ implicit.
 
 ## 🔀 Related lessons on other tracks
 
-- [Project Manager — 02 · Portfolio Management Basics](https://sigilipelli.github.io/project-manager-mastery-path/level-3/02-portfolio-management-basics/)
+- [Project Manager — 02 · Portfolio Management Basics](https://learnmasterypath.com/project-manager-mastery-path/level-3/02-portfolio-management-basics/)
 
 ## Exercise
 

@@ -215,8 +215,8 @@ before, not after, the model commits to features that path can't supply.
 
 ## 🔀 Related lessons on other tracks
 
-- [Data Science — 07 · Cross-Functional Stakeholder Management](https://sigilipelli.github.io/data-science-mastery-path/level-4/07-stakeholder-management/)
-- [Product Lead — Cross-Functional Leadership](https://sigilipelli.github.io/product-lead-mastery-path/level-2/04-cross-functional-leadership/)
+- [Data Science — 07 · Cross-Functional Stakeholder Management](https://learnmasterypath.com/data-science-mastery-path/level-4/07-stakeholder-management/)
+- [Product Lead — Cross-Functional Leadership](https://learnmasterypath.com/product-lead-mastery-path/level-2/04-cross-functional-leadership/)
 
 ## Exercise
 

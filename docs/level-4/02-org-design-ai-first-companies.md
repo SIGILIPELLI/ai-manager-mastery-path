@@ -135,9 +135,9 @@ conflict.
 
 ## 🔀 Related lessons on other tracks
 
-- [Product Lead — 08 · Basic Org Design for Product Teams](https://sigilipelli.github.io/product-lead-mastery-path/level-1/08-basic-org-design/)
-- [Product Manager — 10 · Capstone — Full Product Strategy + Org Design](https://sigilipelli.github.io/product-manager-mastery-path/level-4/10-capstone-strategy-org-design/)
-- [Servant Leadership — 10 · Capstone — Design an Org-Wide Leadership Development Program](https://sigilipelli.github.io/servant-leadership-mastery-path/level-4/10-capstone-leadership-development-program/)
+- [Product Lead — 08 · Basic Org Design for Product Teams](https://learnmasterypath.com/product-lead-mastery-path/level-1/08-basic-org-design/)
+- [Product Manager — 10 · Capstone — Full Product Strategy + Org Design](https://learnmasterypath.com/product-manager-mastery-path/level-4/10-capstone-strategy-org-design/)
+- [Servant Leadership — 10 · Capstone — Design an Org-Wide Leadership Development Program](https://learnmasterypath.com/servant-leadership-mastery-path/level-4/10-capstone-leadership-development-program/)
 
 ## Exercise
 

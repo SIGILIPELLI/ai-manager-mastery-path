@@ -144,7 +144,7 @@ duplication visible and countable, even when it can't be eliminated.
 
 ## 🔀 Related lessons on other tracks
 
-- [Playwright — 01 · Cross-Browser & Device Strategy](https://sigilipelli.github.io/playwright-mastery-path/level-4/01-cross-browser-strategy/)
+- [Playwright — 01 · Cross-Browser & Device Strategy](https://learnmasterypath.com/playwright-mastery-path/level-4/01-cross-browser-strategy/)
 
 ## Exercise
 

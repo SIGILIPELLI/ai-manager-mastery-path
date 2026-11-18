@@ -146,9 +146,9 @@ the start of this program.
 
 ## 🔀 Related lessons on other tracks
 
-- [Agile — 09 · Career Growth: Scrum Master to Agile Coach/Director](https://sigilipelli.github.io/agile-mastery-path/level-4/09-career-growth-scrum-master-to-coach/)
-- [AI Tools — 09 · Career Growth: AI Tools Strategist/Consultant](https://sigilipelli.github.io/ai-tools-mastery-path/level-4/09-career-growth-ai-tools-strategist/)
-- [Automotive Testing — 09 · Career Growth in Automotive Test Engineering](https://sigilipelli.github.io/automotive-testing-mastery-path/level-4/09-career-growth/)
+- [Agile — 09 · Career Growth: Scrum Master to Agile Coach/Director](https://learnmasterypath.com/agile-mastery-path/level-4/09-career-growth-scrum-master-to-coach/)
+- [AI Tools — 09 · Career Growth: AI Tools Strategist/Consultant](https://learnmasterypath.com/ai-tools-mastery-path/level-4/09-career-growth-ai-tools-strategist/)
+- [Automotive Testing — 09 · Career Growth in Automotive Test Engineering](https://learnmasterypath.com/automotive-testing-mastery-path/level-4/09-career-growth/)
 
 ## Exercise
 

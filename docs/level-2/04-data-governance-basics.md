@@ -218,9 +218,9 @@ because the record needed to compute the answer didn't exist.
 
 ## 🔀 Related lessons on other tracks
 
-- [AI Tools — 07 · Data Governance for AI Tool Usage](https://sigilipelli.github.io/ai-tools-mastery-path/level-3/07-data-governance/)
-- [Data Engineering — 05 · Data Governance & Cataloging](https://sigilipelli.github.io/data-engineering-mastery-path/level-3/05-data-governance-cataloging/)
-- [Excel — 08 · Data Governance in Spreadsheet-Heavy Organizations](https://sigilipelli.github.io/excel-mastery-path/level-4/08-data-governance-spreadsheet-organizations/)
+- [AI Tools — 07 · Data Governance for AI Tool Usage](https://learnmasterypath.com/ai-tools-mastery-path/level-3/07-data-governance/)
+- [Data Engineering — 05 · Data Governance & Cataloging](https://learnmasterypath.com/data-engineering-mastery-path/level-3/05-data-governance-cataloging/)
+- [Excel — 08 · Data Governance in Spreadsheet-Heavy Organizations](https://learnmasterypath.com/excel-mastery-path/level-4/08-data-governance-spreadsheet-organizations/)
 
 ## Exercise
 

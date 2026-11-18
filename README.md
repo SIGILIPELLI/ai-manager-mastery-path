@@ -4,10 +4,10 @@ A free, structured, module-wise AI management training program — entry level
 to master level, with real frameworks, templates, and worked examples in
 every module. Focused on **managing** AI initiatives, teams, and products,
 not hands-on ML engineering (see
-[AI/ML Mastery Path](https://sigilipelli.github.io/ai-ml-mastery-path/) for
+[AI/ML Mastery Path](https://learnmasterypath.com/ai-ml-mastery-path/) for
 the technical track).
 
-**Live site:** https://sigilipelli.github.io/ai-manager-mastery-path/
+**Live site:** https://learnmasterypath.com/ai-manager-mastery-path/
 
 ## Contents
 
@@ -35,18 +35,18 @@ python3 -m venv .venv
 
 ## Related
 
-- [Product Manager Mastery Path](https://sigilipelli.github.io/product-manager-mastery-path/)
-- [Project Manager Mastery Path](https://sigilipelli.github.io/project-manager-mastery-path/)
-- [Servant Leadership Mastery Path](https://sigilipelli.github.io/servant-leadership-mastery-path/)
-- [Product Lead Mastery Path](https://sigilipelli.github.io/product-lead-mastery-path/)
-- [AI/ML Mastery Path](https://sigilipelli.github.io/ai-ml-mastery-path/)
-- [LLM Development Mastery Path](https://sigilipelli.github.io/llm-dev-mastery-path/)
-- [RAG Mastery Path](https://sigilipelli.github.io/rag-mastery-path/)
-- [Edge AI Mastery Path](https://sigilipelli.github.io/edge-ai-mastery-path/)
-- [Python Mastery Path](https://sigilipelli.github.io/python-mastery-path/)
-- [Java Mastery Path](https://sigilipelli.github.io/java-mastery-path/)
-- [JavaScript Mastery Path](https://sigilipelli.github.io/javascript-mastery-path/)
-- [Adobe Creative Cloud Mastery Path](https://sigilipelli.github.io/adobe-mastery-path/)
-- [AWS Mastery Path](https://sigilipelli.github.io/aws-mastery-path/)
+- [Product Manager Mastery Path](https://learnmasterypath.com/product-manager-mastery-path/)
+- [Project Manager Mastery Path](https://learnmasterypath.com/project-manager-mastery-path/)
+- [Servant Leadership Mastery Path](https://learnmasterypath.com/servant-leadership-mastery-path/)
+- [Product Lead Mastery Path](https://learnmasterypath.com/product-lead-mastery-path/)
+- [AI/ML Mastery Path](https://learnmasterypath.com/ai-ml-mastery-path/)
+- [LLM Development Mastery Path](https://learnmasterypath.com/llm-dev-mastery-path/)
+- [RAG Mastery Path](https://learnmasterypath.com/rag-mastery-path/)
+- [Edge AI Mastery Path](https://learnmasterypath.com/edge-ai-mastery-path/)
+- [Python Mastery Path](https://learnmasterypath.com/python-mastery-path/)
+- [Java Mastery Path](https://learnmasterypath.com/java-mastery-path/)
+- [JavaScript Mastery Path](https://learnmasterypath.com/javascript-mastery-path/)
+- [Adobe Creative Cloud Mastery Path](https://learnmasterypath.com/adobe-mastery-path/)
+- [AWS Mastery Path](https://learnmasterypath.com/aws-mastery-path/)
 
-See the full [Mastery Path series](https://sigilipelli.github.io/ai-manager-mastery-path/) homepage for links to all 32+ sister sites.
+See the full [Mastery Path series](https://learnmasterypath.com/ai-manager-mastery-path/) homepage for links to all 32+ sister sites.

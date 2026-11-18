@@ -143,9 +143,9 @@ actually verifiable against every system currently running.
 
 ## 🔀 Related lessons on other tracks
 
-- [AWS — Compliance & Governance (Config, Audit Manager)](https://sigilipelli.github.io/aws-mastery-path/level-4/08-compliance-governance/)
-- [Data Engineering — 04 · Advanced Data Governance & Compliance](https://sigilipelli.github.io/data-engineering-mastery-path/level-4/04-advanced-governance-compliance/)
-- [GCP — 08 · Compliance & Governance (Assured Workloads, Policy Intelligence)](https://sigilipelli.github.io/gcp-mastery-path/level-4/08-compliance-governance/)
+- [AWS — Compliance & Governance (Config, Audit Manager)](https://learnmasterypath.com/aws-mastery-path/level-4/08-compliance-governance/)
+- [Data Engineering — 04 · Advanced Data Governance & Compliance](https://learnmasterypath.com/data-engineering-mastery-path/level-4/04-advanced-governance-compliance/)
+- [GCP — 08 · Compliance & Governance (Assured Workloads, Policy Intelligence)](https://learnmasterypath.com/gcp-mastery-path/level-4/08-compliance-governance/)
 
 ## Exercise
 

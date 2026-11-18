@@ -150,6 +150,6 @@ reality, and the check always eventually happens.
 
 ## 🔀 Related lessons on other tracks
 
-- [Product Manager — 10 · Capstone — Full Product Strategy + Org Design](https://sigilipelli.github.io/product-manager-mastery-path/level-4/10-capstone-strategy-org-design/)
-- [Product Lead — 08 · Basic Org Design for Product Teams](https://sigilipelli.github.io/product-lead-mastery-path/level-1/08-basic-org-design/)
-- [REST API — 05 · API Governance & Design Reviews](https://sigilipelli.github.io/rest-api-mastery-path/level-4/05-api-governance/)
+- [Product Manager — 10 · Capstone — Full Product Strategy + Org Design](https://learnmasterypath.com/product-manager-mastery-path/level-4/10-capstone-strategy-org-design/)
+- [Product Lead — 08 · Basic Org Design for Product Teams](https://learnmasterypath.com/product-lead-mastery-path/level-1/08-basic-org-design/)
+- [REST API — 05 · API Governance & Design Reviews](https://learnmasterypath.com/rest-api-mastery-path/level-4/05-api-governance/)
