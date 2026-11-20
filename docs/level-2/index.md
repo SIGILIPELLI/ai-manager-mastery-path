@@ -1,3 +1,7 @@
+---
+description: "Level 2 (Intermediate) of the free AI Manager Mastery Path: Managing ML Experimentation & Iteration, AI Product Metrics, MLOps Fundamentals for Managers…"
+---
+
 # Level 2 · Intermediate
 
 ## Modules

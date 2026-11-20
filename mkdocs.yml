@@ -6,6 +6,7 @@ repo_name: ai-manager-mastery-path
 
 theme:
   name: material
+  font: false
   favicon: assets/favicon.svg
   custom_dir: docs/overrides
   palette:
@@ -24,6 +25,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
+    - navigation.path
     - navigation.tabs
     - navigation.sections
     - navigation.expand
@@ -54,6 +56,20 @@ extra_css:
 
 extra_javascript:
   - javascripts/progress-tracker.js
+
+
+
+
+extra:
+  related:
+    - name: "Product Manager"
+      url: https://learnmasterypath.com/product-manager-mastery-path/
+    - name: "Product Lead"
+      url: https://learnmasterypath.com/product-lead-mastery-path/
+    - name: "Project Manager"
+      url: https://learnmasterypath.com/project-manager-mastery-path/
+    - name: "Servant Leadership"
+      url: https://learnmasterypath.com/servant-leadership-mastery-path/
 
 nav:
   - Home: index.md

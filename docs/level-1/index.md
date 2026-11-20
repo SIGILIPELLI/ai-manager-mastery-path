@@ -1,3 +1,7 @@
+---
+description: "Level 1 (Entry) of the free AI Manager Mastery Path. Understand what AI management actually is, get a working non-technical grasp of how AI/ML systems get…"
+---
+
 # Level 1 · Entry <span class="level-badge">Foundations</span>
 
 Goal: understand what AI management actually is, get a working non-technical

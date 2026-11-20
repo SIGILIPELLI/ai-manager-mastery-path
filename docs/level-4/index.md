@@ -1,3 +1,7 @@
+---
+description: "Level 4 (Master) of the free AI Manager Mastery Path: Executive AI Strategy, Org Design for AI-First Companies, AI Portfolio Management, Leading Through AI…"
+---
+
 # Level 4 · Master
 
 ## Modules

@@ -1,3 +1,7 @@
+---
+description: "Level 3 (Advanced) of the free AI Manager Mastery Path: Scaling AI Teams, AI Governance & Compliance, Managing LLM/GenAI Initiatives, AI Talent Strategy…"
+---
+
 # Level 3 · Advanced
 
 ## Modules
