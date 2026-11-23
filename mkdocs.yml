@@ -81,8 +81,8 @@ not_in_nav: |
 
 nav:
   - Home: index.md
-  - "💼 Interview Questions": interview-questions.md
-  - "📋 Cheat Sheet": cheat-sheet.md
+  - Interview Questions: interview-questions.md
+  - Cheat Sheet: cheat-sheet.md
   - "Level 1 · Entry":
       - Overview: level-1/index.md
       - "01 · What Is AI Management?": level-1/01-what-is-ai-management.md
@@ -131,5 +131,5 @@ nav:
       - "08 · M&A and AI Capability Integration": level-4/08-ma-ai-capability-integration.md
       - "09 · Career Growth: AI Manager to Chief AI Officer": level-4/09-career-growth-ai-manager-to-caio.md
       - "10 · Capstone — Full AI Strategy, Governance & Org Design": level-4/10-capstone-ai-strategy-governance-org-design.md
-  - "🎯 Final Quiz": quiz.md
+  - Final Quiz: quiz.md
 
