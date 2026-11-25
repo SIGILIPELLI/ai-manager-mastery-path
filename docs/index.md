@@ -34,8 +34,7 @@ non-technical stakeholders. If you want the hands-on technical track instead
   table or structured example, not code), plus a worked real-world example.
 - Each topic ends with an **Exercise** — a practical deliverable to produce
   using your own project or team as the subject.
-- Each level ends with a project that combines everything learned in that
-  level into a real document: a charter, an MLOps process design, a
+- Levels 1–3 each end with a project that combines everything learned in that level into a real document: a charter, an MLOps process design, a
   governance framework, or a full strategy document.
 - Use the search bar (top of the page) to jump straight to a topic.
 
